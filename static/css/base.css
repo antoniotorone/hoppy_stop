@@ -1,0 +1,53 @@
+.header{
+    background: black;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    margin-right: 50px;
+   
+}
+
+
+
+.header a:hover{
+    color: burlywood;
+}
+
+.header i{
+    font-size: xx-large;
+    color: white;
+    margin-top: 15px;
+}
+
+
+    
+
+.search-box input{
+   height: 70px;
+   width: 100%;
+   background-color: wheat;
+   display: none;
+}
+
+.search-box ::placeholder{
+color:white;
+font-size:xx-large;
+}
+
+.submit input{
+    font-size: larger;
+}
+.submit input{
+    font-size:larger;
+    margin-top: 15px;
+    background: black;
+    color: white;
+
+
+}
+
+
+
