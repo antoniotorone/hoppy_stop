@@ -6,7 +6,8 @@
     text-decoration: none;
     color: white;
     font-size: x-large;
-    margin-right: 50px;
+    margin-right: 80px;
+    margin-top: 25px;
    
 }
 
@@ -19,17 +20,25 @@
 .header i{
     font-size: xx-large;
     color: white;
-    margin-top: 15px;
+    
+    
+}
+
+#icon-search{
+    margin-top: 40px;
 }
 
 
-    
+/* input and input submit elements*/
+.search-box{
+    display: none;
+}
 
 .search-box input{
    height: 70px;
    width: 100%;
    background-color: wheat;
-   display: none;
+ 
 }
 
 .search-box ::placeholder{
@@ -37,17 +46,7 @@ color:white;
 font-size:xx-large;
 }
 
-.submit input{
-    font-size: larger;
-}
-.submit input{
-    font-size:larger;
-    margin-top: 15px;
-    background: black;
-    color: white;
 
-
-}
 
 
 
