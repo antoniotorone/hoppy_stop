@@ -1,8 +1,23 @@
+
+/*HEADER*/
+
+
+
 .header{
     background: black;
 }
 
-.header a{
+.container-fluid {
+    margin-bottom: auto;
+}
+
+.navbar-brand{
+    padding-right: 80px;
+}
+
+
+.container-fluid a{
+  
     text-decoration: none;
     color: white;
     font-size: x-large;
@@ -24,10 +39,22 @@
     
 }
 
-#icon-search{
-    margin-top: 40px;
+.header button{
+    background-color: white;
 }
 
+#beer-menu{
+    color: black;
+}
+
+#icon-search{
+    margin-top:32px;
+}
+
+/* delivery banner*/
+#delivery-banner{
+    background-color: rgb(165, 165, 1);
+}
 
 /* input and input submit elements*/
 .search-box{
@@ -46,7 +73,27 @@ color:white;
 font-size:xx-large;
 }
 
+/* account and basket p*/
+.text-center p{
+    color: white;
+}
 
+/*mobile-phone*/
+@media only screen and (max-width:576px) {
+   .header i{
+         font-size: larger;
+     }
 
+     #beer-button{
+         padding-top: 40px;
+         padding-right: 0;
+     }
+
+     .container-fluid a{
+         font-size: smaller;
+         margin-right: 0;
+     }
+
+}
 
 
