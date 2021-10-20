@@ -2,7 +2,6 @@
 /*HEADER*/
 
 
-
 .header{
     background: black;
 }
@@ -76,6 +75,29 @@ font-size:xx-large;
 /* account and basket p*/
 .text-center p{
     color: white;
+}
+
+#account-menu{
+    background: black;
+    color: black;
+}
+
+#account-menu :hover{
+    background-color:wheat;
+}
+
+
+
+/* PRODUCTS */
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;/*??*/
+    z-index: -1;
 }
 
 /*mobile-phone*/
