@@ -1,12 +1,17 @@
 
 /*HEADER*/
 
+.body{
+    font-family: 'Festive';
+}
 
 .header{
     background: black;
 }
 
 .container-fluid {
+    padding-left: 12px;
+    padding-right: 0;
     margin-bottom: auto;
 }
 
@@ -100,6 +105,41 @@ font-size:xx-large;
     z-index: -1;
 }
 
+.card-body p{
+    font-weight: bolder;
+    color: black;
+    font-size: larger;
+}
+
+/*Product detail*/
+
+.card-img-top{
+   margin-top: 55px;
+}
+
+.product-details-container h4{
+    color: green;
+    font-weight: 700;
+}
+
+.product-details-container h5{
+     color:orange;
+}
+
+.product-details-container p{
+      margin-top: 15px;
+      font-weight: 500;
+}
+
+.rounded-pill{
+    margin-top: 20px;
+    width: 42%;
+    height:30px;
+    padding-left:25px;
+    background-color: papayawhip;
+}
+
+
 /*mobile-phone*/
 @media only screen and (max-width:576px) {
    .header i{
@@ -115,6 +155,14 @@ font-size:xx-large;
          font-size: smaller;
          margin-right: 0;
      }
+
+}
+
+
+@media only screen and (max-width:768px) {
+    .rounded-pill {
+        width: 50%;
+        padding-left: 15px;
 
 }
 
