@@ -57,7 +57,7 @@
 
 /* delivery banner*/
 #delivery-banner{
-    background-color: rgb(165, 165, 1);
+    background-color:gold
 }
 
 /* input and input submit elements*/
@@ -138,6 +138,17 @@ font-size:xx-large;
     height:30px;
     padding-left:25px;
     background-color: papayawhip;
+}
+
+#top-arrow{
+    font-size: xx-large;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
 }
 
 
