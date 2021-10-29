@@ -50,4 +50,22 @@ $(document).ready(function(){
        var itemId = $(this).data('item_id');
        enableDisableButton(itemId);
     });
+
+    // Update and remove item quantity in basket page //
+    $('.update_quantity_item').click(function (e) {
+        var update_form = $(this).prev('.update-form');
+        update_form.submit();
+    })
+
+    $('remove_item').click(function (e){
+        var csrfToken = "{{ csrf_token }}";
+        var itemid = $(this).attr('id').split('remove_')[1];
+        var url = `/basket/remove/${itemid}`;
+        var data = {'csrfmiddlewaretoken':csrfToken};
+
+        $.post(url, data)
+          .done(function(){
+              location.reload();
+          })
+    })
 });

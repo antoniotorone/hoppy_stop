@@ -151,6 +151,15 @@ font-size:xx-large;
     cursor: pointer;
 }
 
+/* Basket page*/
+
+/* update and remove links*/
+.update_quantity_item, .remove_item{
+    cursor: pointer;
+}
+
+
+
 
 /*mobile-phone*/
 @media only screen and (max-width:576px) {

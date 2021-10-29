@@ -47,7 +47,36 @@
                                     <p class="">{{ item.product.price }}</p>
                                 </td>
                                 <td class="">
-                                    <p class="">{{ item.quantity }}</p>
+                                    <form class="form update-form" method="POST" action="{% url 'adapt_basket' item.item_id %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="decrement-qty btn" data-item_id="{{ product.id }}"
+                                                        id="decrement-qty_{{ product.id }}">
+                                                        <span class="icon">
+                                                            <i class="fas fa-minus"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                                <input class="form-control  qty_input" type="number" name="quantity"
+                                                    value="1" min="1" max="99" data-item_id="{{ product.id}}"
+                                                    id="id_qty_{{ product.id}}">
+
+                                                <div class="input-group-append">
+                                                    <button class="increment-qty btn" data-item_id="{{ product.id }}"
+                                                        id="increment-qty_{{ product.id }}">
+                                                        <span class="icon">
+                                                            <i class="fas fa-plus"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <a class="update_quantity_item text-success">Update</a>
+                                    <a class="remove_item text-danger" id="remove"_{{ item.item_id }}>Remove</a>
                                 </td>
                                 <td class="">
                                     <p class="">£{{ item.product.price }}</p>
