@@ -7,20 +7,19 @@
 
 .header{
     background: black;
-}
-
-.container-fluid {
     padding-left: 12px;
     padding-right: 0;
     margin-bottom: auto;
 }
+
+
 
 .navbar-brand{
     padding-right: 80px;
 }
 
 
-.container-fluid a{
+.header a{
   
     text-decoration: none;
     color: white;
@@ -47,6 +46,7 @@
     background-color: white;
 }
 
+/* beer-menu id, visible  only on mobile-phone device */
 #beer-menu{
     color: black;
 }
@@ -57,7 +57,8 @@
 
 /* delivery banner*/
 #delivery-banner{
-    background-color:gold
+    margin: 0;
+    background-color:red
 }
 
 /* input and input submit elements*/
@@ -91,7 +92,21 @@ font-size:xx-large;
     background-color:wheat;
 }
 
+/* INDEX */
 
+.image-carousel{
+   padding: 0;
+}
+
+.shop-all-btn{
+    min-width: 260px;
+    margin-top: 15px;
+}
+
+.shop-all-btn a{
+    color:white;
+    text-decoration: none;
+}
 
 
 /* PRODUCTS */

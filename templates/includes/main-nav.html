@@ -1,78 +1,79 @@
 <div class="row header">
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home' %}">HOPPY STOP</a>
-        <i id="beer-button"class="fas fa-beer navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          
-        </i>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-labelledby="products-link">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav" aria-current="page" href="{% url 'products' %}?category=Beers">BEERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav" href="{% url 'products' %}?category=Cases">CASES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav" href="{% url 'products' %}?category=Mini_Kegs">MINI KEGS</a>
-            </li>
-            <li class="nav-item">
-              <a a class="nav" href="{% url 'products' %}?category=Glasses">GLASSES</a>
-              </a>
-            </li>
-              
-            <!--search icon with java script-->
-            <li class="active">
-              <i id="icon-search"class="fa fa-search " aria-hidden="true"></i>
-            </li>
-          </ul>
-         
-        </div>
-      </div>
-  
-      <!-- account and basket-->
-      <div class="col-12 col-lg-4">
-        <ul>
-          <li class="list-inline-item dropdown">
-            <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <div class="text-center">
-                <div><i class="fas fa-user fa-lg"></i></div>
-                <p class="my-0">My Account</p>
-              </div>
-            </a>
-            <div id="account-menu" class="dropdown-menu border-0 active" aria-labelledby="user-options">
-              {% if request.user.is_authenticated %}
-              {% if request.user.is_superuser %}
-              <a href="" class="dropdown-item">Product Management</a>
-              {% endif %}
-              <a href="" class="dropdown-item">My Profile</a>
-              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-              {% else %}
-              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-              {% endif %}
-            </div>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">HOPPY STOP</a>
+      <i id="beer-button" class="fas fa-beer navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </i>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-labelledby="products-link">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav" aria-current="page" href="{% url 'products' %}?category=Beers">BEERS</a>
           </li>
-          <!--Basket-->
-          <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket' %}">
-              <div class="text-center">
-                <div><i class="fas fa-shopping-basket"></i></div>
-                <p class="my-0">
-                  {% if grand_total %}
-                  ${{ grand_total|floatformat:2 }}
-                  {% else %}
-                  $0.00
-                  {% endif %}
-                </p>
-              </div>
+          <li class="nav-item">
+            <a class="nav" href="{% url 'products' %}?category=Cases">CASES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav" href="{% url 'products' %}?category=Mini_Kegs">MINI KEGS</a>
+          </li>
+          <li class="nav-item">
+            <a a class="nav" href="{% url 'products' %}?category=Glasses">GLASSES</a>
             </a>
+          </li>
+
+          <!--search icon with java script-->
+          <li class="active">
+            <i id="icon-search" class="fa fa-search " aria-hidden="true"></i>
           </li>
         </ul>
+
       </div>
-    </nav>
-  </div>
+    </div>
+
+    <!-- account and basket-->
+    <div class="col-12 col-lg-4">
+      <ul>
+        <li class="list-inline-item dropdown">
+          <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="text-center">
+              <div><i class="fas fa-user fa-lg"></i></div>
+              <p class="my-0">My Account</p>
+            </div>
+          </a>
+          <div id="account-menu" class="dropdown-menu border-0 active" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="" class="dropdown-item">Product Management</a>
+            {% endif %}
+            <a href="" class="dropdown-item">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            {% endif %}
+          </div>
+        </li>
+        <!--Basket-->
+        <li class="list-inline-item">
+          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+            href="{% url 'view_basket' %}">
+            <div class="text-center">
+              <div><i class="fas fa-shopping-basket"></i></div>
+              <p class="my-0">
+                {% if grand_total %}
+                ${{ grand_total|floatformat:2 }}
+                {% else %}
+                $0.00
+                {% endif %}
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
