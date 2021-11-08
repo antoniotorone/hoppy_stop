@@ -69,7 +69,7 @@
 .search-box input{
    height: 70px;
    width: 100%;
-   background-color: wheat;
+   background-color:white
  
 }
 
@@ -167,10 +167,39 @@ font-size:xx-large;
 }
 
 /* Basket page*/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.img-fluid{
+    max-height: 32rem;
+}
+
+#input-basket{
+    max-width: 50%;
+}
 
 /* update and remove links*/
-.update_quantity_item, .remove_item{
+.update_quantity_item {
     cursor: pointer;
+}
+
+.remove_item{
+    cursor: pointer;
+}
+
+
+
+/* Messages */
+.message-container{
+    position: fixed;
+    z-index: 9999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
 
 

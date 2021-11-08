@@ -58,7 +58,8 @@ $(document).ready(function(){
     })
 
     $('.remove_item').click(function (e) {
-        var csrfToken = "{{ csrf_token }}";
+        var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+        console.log(csrfToken)
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/basket/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken':csrfToken, };
@@ -68,4 +69,9 @@ $(document).ready(function(){
               location.reload();
           });
     })
+
+    
+    $('.toast').toast(show);
+    
 });
+

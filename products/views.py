@@ -26,10 +26,12 @@ def all_products(request):
             query = request.GET['q']
             if not query:
                 messages.error(request, "No results matched your query")
-                return redirect(reverse ('products'))
+                return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(taste__icontains=query) | Q(style__icontains=query)
             products = products.filter(queries)
+    
+
     
     
     context = {
@@ -50,6 +52,6 @@ def product_detail(request, product_id):
     context = {
         'product': product,
     }
-
+    
     return render(request, 'products/product_detail.html', context)
 
