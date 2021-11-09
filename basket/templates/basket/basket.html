@@ -43,13 +43,13 @@
                                         <img class=" img-fluid rounded" src="{{ item.product.image.url }}">
                                     </td>
                                 </div>
-                                <td class="">
+                                <td class="p3 w-25">
                                     <p class=""><strong>{{ item.product.name }}</strong></p>
                                 </td>
-                                <td class="">
+                                <td class="p3 w-25">
                                     <p class="">{{ item.product.price }}</p>
                                 </td>
-                                <td class="">
+                                <td class="p3 w-25">
                                     <form class="form update-form" method="POST" action="{% url 'adapt_basket' item.item_id %}">
                                         {% csrf_token %}
                                         <a class="update_quantity_item text-success">Update</a>

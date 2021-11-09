@@ -166,16 +166,35 @@ font-size:xx-large;
     cursor: pointer;
 }
 
+.message-container {
+    position:fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 9999999999;
+}
+
+/* TOASTS*/
+.custom-toast {
+    margin-top: 6.5rem;
+   overflow: visible;
+}
+
+.toast-capper {
+    
+    height: 2px;
+}
+
+/* Messages */
+.message-container {
+    position:fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 9999999999;
+}
+
+
 /* Basket page*/
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-.img-fluid{
-    max-height: 32rem;
-}
-
-#input-basket{
-    max-width: 50%;
-}
 
 /* update and remove links*/
 .update_quantity_item {
@@ -188,19 +207,6 @@ font-size:xx-large;
 
 
 
-/* Messages */
-.message-container{
-    position: fixed;
-    z-index: 9999999999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
-}
 
 
 
