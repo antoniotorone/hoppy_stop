@@ -241,6 +241,13 @@ font-size:xx-large;
 #warning{
     color:#ffc107
 }
+ 
+/* Toast_success*/
+.basket-preview{
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 
 /* Messages */

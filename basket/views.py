@@ -14,13 +14,14 @@ def view_basket(request):
 def add_to_basket(request, item_id):
     """ Add the quantity of the specified item to the basket"""
     
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     basket = request.session.get('basket', {})
 
     if item_id in list(basket.keys()):
         basket[item_id] += quantity
+        messages.success(request, f'Updated {product.name} quantity to {basket[item_id]}')
     else:
         basket[item_id] = quantity
         messages.success(request, f'Added {product.name} to your basket')
@@ -37,23 +38,27 @@ def adapt_basket(request, item_id):
 
     if quantity > 0:
         basket[item_id] = quantity
+        messages.success(request, f'Updated {product.name} quantity to {basket[item_id]}')
     else:
         basket.pop[item_id]
+        messages.success(request, f'Removed {product.name} from your basket')
 
     request.session['basket'] = basket
     return redirect(reverse('view_basket'))
 
+#REMOVE FROM THE BASKET
 def remove_from_basket(request, item_id):
     """ Remove the specified item from the basket"""
     product = get_object_or_404(Product, pk=item_id)
     basket = request.session.get('basket', {})
     try:
         basket.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your bag')
+        messages.success(request, f'Removed {product.name} from your basket')
 
         request.session['basket'] = basket
         return redirect(reverse('view_basket'))
        
 
     except Exception as e:
+        messages.error(request, f'Error removing item:{e}')
         return HttpResponse(status=500)
