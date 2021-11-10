@@ -6,7 +6,7 @@
 }
 
 .header{
-    background: black;
+    background: linear-gradient( 1deg, black, #00000094 );
     padding-left: 12px;
     padding-right: 0;
     margin-bottom: auto;
@@ -32,7 +32,7 @@
 
 
 .header a:hover{
-    color: burlywood;
+    color: rgba(138, 6, 6, 0.753);
 }
 
 .header i{
@@ -58,7 +58,7 @@
 /* delivery banner*/
 #delivery-banner{
     margin: 0;
-    background-color:red
+    background-color:black
 }
 
 /* input and input submit elements*/
@@ -74,7 +74,7 @@
 }
 
 .search-box ::placeholder{
-color:white;
+color:black;
 font-size:xx-large;
 }
 
@@ -127,33 +127,6 @@ font-size:xx-large;
     font-size: larger;
 }
 
-/*Product detail*/
-
-.card-img-top{
-   margin-top: 55px;
-}
-
-.product-details-container h4{
-    color: green;
-    font-weight: 700;
-}
-
-.product-details-container h5{
-     color:orange;
-}
-
-.product-details-container p{
-      margin-top: 15px;
-      font-weight: 500;
-}
-
-.rounded-pill{
-    margin-top: 20px;
-    width: 42%;
-    height:30px;
-    padding-left:25px;
-    background-color: papayawhip;
-}
 
 #top-arrow{
     font-size: xx-large;
@@ -162,9 +135,86 @@ font-size:xx-large;
     margin-bottom: 25px;
     margin-right: 50px;
     text-decoration: none;
-    color: red;
+    color:black;
     cursor: pointer;
 }
+
+/*Product detail*/
+
+.card-img-top{
+   margin-top: 25px;
+}
+
+.product-details-container{
+    margin-top: 25px;
+}
+
+.product-details-container h4{
+    color: green;
+    font-weight: 700;
+}
+
+.product-details-container h5{
+     color:black;
+}
+
+.product-details-container p{
+      margin-top: 15px;
+      font-weight: 500;
+}
+
+.rounded-pill{
+    margin-bottom: 25px;
+    padding-top: 2px;
+    border-color: black;
+    margin-top: 25px;
+    width: 42%;
+    height:30px;
+    padding-left:25px;
+    background-color: lightgray;
+}
+
+.form-row p{
+  margin-top: 25px;
+}
+
+.form-row strong{
+    padding-left: 70px;
+    font-size: larger;
+}
+
+/* quantity input */
+.form-row input{
+    max-width: 30%;
+}
+
+.increment-qty i{
+    font-size: x-large;
+}
+
+.decrement-qty i{
+    font-size: x-large;
+}
+
+.keep-get-drink{
+    font-size: initial;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.add-to-basket{
+   
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+
+
 
 .message-container {
     position:fixed;
@@ -174,15 +224,24 @@ font-size:xx-large;
 }
 
 /* TOASTS*/
-.custom-toast {
-    margin-top: 6.5rem;
-   overflow: visible;
+
+
+#success{
+    color: green;
 }
 
-.toast-capper {
-    
-    height: 2px;
+#error{
+    color: red;
 }
+
+#info{
+    color:rgb(73, 231, 231)
+}
+
+#warning{
+    color:#ffc107
+}
+
 
 /* Messages */
 .message-container {
@@ -193,16 +252,40 @@ font-size:xx-large;
 }
 
 
-/* Basket page*/
+/* BASKET*/
+
+/* table */
+
+.price{
+    padding-left: 30px;
+}
+
+/* quantity input */
+.form-control{
+    border: 1px solid black;
+    max-width: initial;
+}
 
 
 /* update and remove links*/
 .update_quantity_item {
+    margin-left: 12px;
+    text-decoration: none;
+    padding-right: 5px;
+    font-weight: bolder;
     cursor: pointer;
 }
 
 .remove_item{
+    text-decoration: none;
+    font-weight: bolder;
     cursor: pointer;
+}
+
+.checkout{
+    text-decoration: none;
+    color:green;
+    font-weight: bolder;
 }
 
 

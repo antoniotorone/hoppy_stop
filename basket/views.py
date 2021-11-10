@@ -43,7 +43,6 @@ def adapt_basket(request, item_id):
     request.session['basket'] = basket
     return redirect(reverse('view_basket'))
 
-
 def remove_from_basket(request, item_id):
     """ Remove the specified item from the basket"""
     product = get_object_or_404(Product, pk=item_id)

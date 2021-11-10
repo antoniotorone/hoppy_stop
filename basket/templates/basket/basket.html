@@ -25,74 +25,73 @@
             <div class="col">
                 {% if basket_items %}
                     <div class="table-responsive rounded">
-                        <table class="table">
+                        <table class="table table caption-top">
+                            <caption>List of items in the basket</caption>
                             <thead>
                                 <tr>
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price per item</th>
                                     <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal Per Item</th>
+                                    <th scope="col">Gross</th>
                                 </tr>
                             </thead>
 
-                            {% for item in basket_items %}
-                            <tr>
-                                <div class="col-6">
-                                    <td class="p3 w-25">
-                                        <img class=" img-fluid rounded" src="{{ item.product.image.url }}">
-                                    </td>
-                                </div>
-                                <td class="p3 w-25">
-                                    <p class=""><strong>{{ item.product.name }}</strong></p>
-                                </td>
-                                <td class="p3 w-25">
-                                    <p class="">{{ item.product.price }}</p>
-                                </td>
-                                <td class="p3 w-25">
-                                    <form class="form update-form" method="POST" action="{% url 'adapt_basket' item.item_id %}">
-                                        {% csrf_token %}
-                                        <a class="update_quantity_item text-success">Update</a>
-                                        <a class="remove_item text-danger" id="remove_{{ item.item_id }}">Remove</a>
+                         {% for item in basket_items %}
+                         <tr>
+                             <div class="col-6">
+                                 <td class="p3 w-25">
+                                     <img class=" img-fluid rounded" src="{{ item.product.image.url }}">
+                                 </td>
+                             </div>
+                             <td class="p3 w-25">
+                                 <p class=""><strong>{{ item.product.name }}</strong></p>
+                             </td>
+                             <td class="p3 w-25">
+                                 <p class="price">{{ item.product.price }}</p>
+                             </td>
+                             <td class="p3 w-25">
 
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <button class="decrement-qty btn" data-item_id="{{ product.id }}"
-                                                        id="decrement-qty_{{ product.id }}">
-                                                        <span class="icon">
-                                                            <i class="fas fa-minus"></i>
-                                                        </span>
-                                                    </button>
-                                                </div>
+                                 <!--Form update or remove quantity-->
+                                 <form class="form update-form" method="POST"
+                                     action="{% url 'adapt_basket' item.item_id %}">
+                                     {% csrf_token %}
+                                     <div class="form-group">
+                                         <div class="input-group">
+                                             <div class="input-group-prepend">
+                                                 <button class="decrement-qty btn" data-item_id="{{ product.id }}"
+                                                     id="decrement-qty_{{ product.id }}">
+                                                     <span class="icon">
+                                                         <i class="fas fa-minus-square"></i>
+                                                     </span>
+                                                 </button>
+                                             </div>
 
-                                               
-                                                <input id="input-basket" class="form-control  qty_input" type="number" name="quantity"
-                                                    value="1" min="1" max="99" data-item_id="{{ product.id}}"
-                                                    id="id_qty_{{ product.id}}">
-
-                                                <div class="input-group-append">
-                                                    <button class="increment-qty btn" data-item_id="{{ product.id }}"
-                                                        id="increment-qty_{{ product.id }}">
-                                                        <span class="icon">
-                                                            <i class="fas fa-plus"></i>
-                                                        </span>
-                                                    </button>
-                                                </div>
+                                             <input id="input-basket" class="form-control  qty_input" type="number"
+                                                 name="quantity" value="1" min="1" max="99"
+                                                 data-item_id="{{ product.id}}" id="id_qty_{{ product.id}}">
+                                             <div class="input-group-append">
+                                                 <button class="increment-qty btn"
+                                                     data-item_id="{{ product.id }}"
+                                                     id="increment-qty_{{ product.id }}">
+                                                     <span class="icon">
+                                                         <i class="fas fa-plus-square"></i>
+                                                     </span>
+                                                 </button>
                                             </div>
                                         </div>
                                     </form>
-                                    <!--UPDATE AND REMOVE ANCHOR-->
-                                   
-                                </td>
-                                <td class="">
-                                    <p class="">£{{ item.product.price }}</p>
-                                </td>
-                            </tr>
-                            {% endfor %}
+                                    <a class="update_quantity_item text-success ">Update</a>
+                                    <a class="remove_item text-danger" id="remove_{{ item.item_id }}">Remove</a>
 
+                             </td>
+                             <td class="">
+                                <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                             </td>
+                         </tr>
+                         {% endfor %}
 
-                            <tr>
+                           
                                 <td>
                                     <h6><strong>Total Basket: £{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: £{{ delivery|floatformat:2}}</h6>
@@ -103,31 +102,36 @@
                                     </p>
                                     {% endif %}
                                 </td>
-                            </tr>
+                      
 
-                            <tr>
+                          
                                 <td class="text-right">
-                                    <a href="{% url 'products' %}">
+                                    <a class="keep-get-drink  " href="{% url 'products' %}">
                                         <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
+                                            <i class="fas fa-shopping-cart"></i></i>
                                         </span>
                                         <span class="text-uppercase">Keep get Drink.</span>
                                     </a>
-                                    <a href="">
+                                </td>
+                                <td class="text-left">
+                                    <a class="checkout" href="">
                                         <span class="text-uppercase">Go to the Checkout</span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
+                                        <span>
+                                            <i class="fas fa-credit-card"></i>
                                         </span>
                                     </a>
                                 </td>
-                            </tr>
+                                <td></td>
+                                <td></td>
+                                
+                            
                         </table>
                     </div>
                 {% else %}
                     <p class="lead mb-5">No items in your basket.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-shopping-cart"></i></i>
                         </span>
                         <span class="text-uppercase">Get Another Drink.</span>
                     </a>
