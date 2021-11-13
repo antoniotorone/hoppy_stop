@@ -2,9 +2,8 @@
 /*HEADER*/
 
 .body{
-    font-family: 'Festive';
+    font-family: serif
 }
-
 .header{
     background: linear-gradient( 1deg, black, #00000094 );
     padding-left: 12px;
@@ -20,7 +19,7 @@
 
 
 .header a{
-  
+   
     text-decoration: none;
     color: white;
     font-size: larger;
@@ -32,8 +31,12 @@
 
 
 .header a:hover{
-    color: rgba(138, 6, 6, 0.753);
+  color: #d41608;
 }
+ 
+   
+  
+
 
 .header i{
     font-size: xx-large;
@@ -171,7 +174,7 @@ font-size:xx-large;
     width: 42%;
     height:30px;
     padding-left:25px;
-    background-color: lightgray;
+    background: linear-gradient(45deg, #d41608, transparent);
 }
 
 .form-row p{

@@ -97,9 +97,9 @@
                                     <h6><strong>Total Basket: £{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: £{{ delivery|floatformat:2}}</h6>
                                     <h4><strong>Grand Total: £{{ grand_total|floatformat:2}}</strong></h4>
-                                    {% if free_delivery_delta > 0 %}
+                                    {% if free_delivery > 0 %}
                                     <p class="text-danger">
-                                        Why not get free delivery!!! Just spend £{{ free_delivery_delta}} more
+                                        Why not get free delivery!!! Just spend £{{ free_delivery}} more
                                     </p>
                                     {% endif %}
                                 </td>
@@ -107,7 +107,7 @@
 
                           
                                 <td class="text-right">
-                                    <a class="keep-get-drink  " href="{% url 'products' %}">
+                                    <a class="keep-get-drink" href="{% url 'products' %}">
                                         <span class="icon">
                                             <i class="fas fa-shopping-cart"></i></i>
                                         </span>
