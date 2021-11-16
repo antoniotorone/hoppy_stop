@@ -20,18 +20,18 @@ class Order(models.Model):
     county = models.CharField(max_length=80, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
-    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    order_gross = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
 
     def _develop_order_number(self):
         """
-         Develop a casual order number with UUID
+        Develop a casual, unique order number with UUID
         """
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
         """
-        Update grand total any time an item is added,
+        Update grand total any time a line item is added,
         accounting for delivery costs.
         """
         self.order_gross = self.lineitems.aggregate(Sum('lineitem_gross'))['lineitem_gross__sum']
@@ -58,14 +58,15 @@ class Order(models.Model):
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
-    product_size = models.CharField(max_length=2, null=True, blank=True) # XS, S, M, L, XL
     quantity = models.IntegerField(null=False, blank=False, default=0)
-    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+    lineitem_gross = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
     def save(self, *args, **kwargs):
         """
-        Override the original save method to set the lineitem total
-        and update the order total.
+        Override the original save method to set the lineitem gross
+        and update the order gross.
         """
-        self.lineitem_total = self.product.price * self.quantity
+        self.lineitem_gross = self.product.price * self.quantity
         super().save(*args, **kwargs)
+
+    
