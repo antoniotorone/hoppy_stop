@@ -42,13 +42,14 @@
     <!--fixer-top unsure that sticks to the top of the page-->
     <header class="container-fluid no-padding">
       {% include 'includes/main-nav.html' %}
-    </header>
+    
 
     <div id="delivery-banner" class="row text-center">
       <div class="col text-white">
-        <h4 class="logo-font my-1">Free delivery on orders over £{{ FREE_DELIVERY_THRESHOLD }}!</h4>
+        <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold  }}!</h4>
       </div>
     </div>
+    </header>
 
     <!--search input bar-->
     <div class="row">
