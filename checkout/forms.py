@@ -35,5 +35,5 @@ class OrderForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'stripe-style-input' # this is a css class 
+            self.fields[field].widget.attrs['class'] = 'stripe-style' # this is a css class in checkout css of checkout app
             self.fields[field].label = False

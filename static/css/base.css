@@ -323,10 +323,26 @@ font-size:xx-large;
 }
 
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:576px) {
     .rounded-pill {
         width: 50%;
         padding-left: 15px;
+    }
+
+    /*index*/
+
+    #delivery-banner h4{
+        font-size: smaller;
+        padding-right: 100px;
+    }
+
+    .carousel-inner{
+        max-width: 288px;
+    }
+
+    .shop-all-btn {
+        min-width: 260px;
+        margin-top: 15px;
     }
 
 }
