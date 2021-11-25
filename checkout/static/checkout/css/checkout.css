@@ -48,3 +48,9 @@ font-weight: 700;
     border:1px solid black;
     background:linear-gradient( 1deg, black, #00000094 );
 }
+
+.btn{
+  background: linear-gradient( 1deg, #00000096, #00000052 );
+}
+
+
