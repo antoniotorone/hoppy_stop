@@ -4,10 +4,8 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-from  products.models import Product
-from basket.contexts import  basket_contents
-
-
+from products.models import Product
+from basket.contexts import basket_contents
 
 import stripe
 
@@ -44,7 +42,6 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
-                   
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your basket wasn't "
@@ -56,10 +53,9 @@ def checkout(request):
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
-        else:
+        
             messages.error(request, 'There was an error with your form. \
             try  check your information')
-
     else:
         basket = request.session.get('basket', {})
         if not basket:
@@ -97,12 +93,11 @@ def checkout_success(request, order_number):
     check successful checkouts
     """
 
-    save_info = request.session.get(
-        'save_info')
-    order = get_object_or_404(
-        Order, order_number=order_number)
+    save_info = request.session.get('save_info')
+    order = get_object_or_404( Order, order_number=order_number )
     messages.success(request, f'Order successfully completed \
-    Your order number is {order_number}. A confirmatiobn email will be sen to {order.email}.')
+    Your order number is {order_number}. A confirmation \
+         email will be sent to {order.email}.')
 
     if 'basket' in request.session:
         del request.session['basket']
