@@ -298,6 +298,82 @@ font-size:xx-large;
     font-weight: bolder;
 }
 
+/* checkout and sign in input */
+
+input{
+    margin:0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 100%;
+}
+
+#id_remember{
+    margin-top: 25px;
+    width:10%;
+}
+
+/* ALLAUTH FORM STYLE */
+
+.allauth-form-new-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-new-content input {
+    border-color: #000;
+    border-radius: 0;
+    border-width:thin;
+    margin-bottom: 25px;
+}
+.allauth-form-new-content input::placeholder {
+    color:rgb(128, 128, 128);
+}
+
+.allauth-form-new-content button,
+.allauth-form-new-content input[type='submit'] {
+	/* button */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+    
+    
+
+    /* bootstrap button transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-new-content button:hover,
+.allauth-form-new-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+
+
+#id_login{
+    margin-bottom: 25px;
+}
+
+
+.allauth-form-new-content a {
+    border-color:black;
+	color:#050905 
+
+}
+
 
 
 
