@@ -12,7 +12,8 @@ class OrderForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         """
-     Way to add placeholders and classes instead to have to auto-generated labels
+        Way to add placeholders and classes
+        instead to have to auto-generated labels
         """
         super().__init__(*args, **kwargs)
         placeholders = {
@@ -24,16 +25,18 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
-            'county': 'County',
-        }
+            'county': 'County, Region',
+            }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            # The if statement check id the field is required and if is will display a star
+            # The if statement check id the field is required
+            # and if is will display a star
+            # stripe style is a css class in checkout css of checkout app
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'stripe-style' # this is a css class in checkout css of checkout app
+            self.fields[field].widget.attrs['class'] = 'stripe-style'
             self.fields[field].label = False
