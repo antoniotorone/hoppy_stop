@@ -11,7 +11,7 @@
         <hr>
       </div>
     </div>
-    {% if grand_total %}
+    {% if grand_total and not on_profile_page %}
     <p>Your Basket ({{ product_count }})</p>
     <!--STILL DO IN CSS WHEN DONE CHANGE THE NAME-->
     <div class="basket-preview">

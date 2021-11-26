@@ -374,6 +374,20 @@ input{
 
 }
 
+/* My Profile Form */
+
+#id_default_country{
+    height:
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    width:100%;
+}
+
+
+
+
+.controls{
+    margin-bottom: 25px;
+}
 
 
 
