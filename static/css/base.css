@@ -374,13 +374,21 @@ input{
 
 }
 
+/* MY PROFILE */
+
 /* My Profile Form */
 
 #id_default_country{
-    height:
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     width:100%;
 }
+
+.order-history{
+    max-height: 416px;
+    overflow-y: auto;
+}
+
+
 
 
 
