@@ -18,63 +18,70 @@
            </div>
            <!--Product detail col-->
            <div class="col-12 col-md-6 col-lg-4">
-              <div class="product-details-container mb-5">
-                  <h3 class="">{{ product.name}}</h3>
-                  <h4 class="text-left font-weight-bold">£{{ product.price }}</h4>
-                {% if product.taste %}
-                  <div class="rounded-pill">
-                      <h5 class="">{{ product.taste }}</h5>
-                  </div>
-                {% endif %}
-                  <p class="">{{ product.description}}</p>
-              </div>
-         
-           <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
-               {% csrf_token %}
-               <div class="form-row">
-                   <div class="col-12">
-                       <p class="mt-3"><strong>Quantity</strong></p>
-                       <div class="form-group">
-                           <div class="input-group">
-                               <div class="input-group-prepend">
-                                   <button class="decrement-qty btn" data-item_id="{{ product.id }}"
-                                       id="decrement-qty_{{ product.id }}">
-                                       <span>
-                                        <i class="fas fa-minus-square"></i>
-                                       </span>
-                                   </button>
-                               </div>
+               <div class="product-details-container mb-5">
+                   <h3 class="">{{ product.name}}</h3>
+                   <h4 class="text-left font-weight-bold">£{{ product.price }}</h4>
+                   {% if product.taste %}
+                   <div class="rounded-pill">
+                       <h5 class="">{{ product.taste }}</h5>
+                   </div>
+                   {% endif %}
+                   <p class="mt-3">{{ product.description}}</p>
+               </div>
+            <!--edit and delete functionality for the superuser-->
+               {% if request.user.is_superuser %}
+               <p class="ml-3">
+                   <a class="text-black" href="{% url 'edit_product' product.id %}">Edit</a>
+                   <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+               </p>
+             {% endif %}
 
-                               <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
-                                   max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+               <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
+                   {% csrf_token %}
+                   <div class="form-row">
+                       <div class="col-12">
+                           <p class="mt-3"><strong>Quantity</strong></p>
+                           <div class="form-group">
+                               <div class="input-group">
+                                   <div class="input-group-prepend">
+                                       <button class="decrement-qty btn" data-item_id="{{ product.id }}"
+                                           id="decrement-qty_{{ product.id }}">
+                                           <span>
+                                               <i class="fas fa-minus-square"></i>
+                                           </span>
+                                       </button>
+                                   </div>
 
-                               <div class="input-group-append">
-                                   <button class="increment-qty btn" data-item_id="{{product.id }}"
-                                       id="increment-qty_{{ product.id}}">
-                                       <span class="icon">
-                                        <i class="fas fa-plus-square"></i>
-                                       </span>
-                                   </button>
+                                   <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
+                                       max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+
+                                   <div class="input-group-append">
+                                       <button class="increment-qty btn" data-item_id="{{product.id }}"
+                                           id="increment-qty_{{ product.id}}">
+                                           <span class="icon">
+                                               <i class="fas fa-plus-square"></i>
+                                           </span>
+                                       </button>
+                                   </div>
                                </div>
                            </div>
                        </div>
-                   </div>
-                   <div class="col-12 ">
-                       <a class="keep-get-drink"href="{% url 'products' %}">
-                           <span class="icon">
-                            <i class="fas fa-shopping-cart"></i>
-                           </span>
-                           <span class="text-uppercase">Keep get Drink</span>
-                       </a>
-                        
-                       <button type="submit" class="mt-3 rounded-pill" value="Add to Basket">
-                          <span class="add-to-basket" Add to basket>Add to Basket</span>
-                       </button>
+                       <div class="col-12 ">
+                           <a class="keep-get-drink" href="{% url 'products' %}">
+                               <span class="icon">
+                                   <i class="fas fa-shopping-cart"></i>
+                               </span>
+                               <span class="text-uppercase">Keep get Drink</span>
+                           </a>
 
-                       <input type="hidden" class="mt-3" name="redirect_url" value="{{ request.path }}">
+                           <button type="submit" class="mt-3 rounded-pill" value="Add to Basket">
+                               <span class="add-to-basket" Add to basket>Add to Basket</span>
+                           </button>
+
+                           <input type="hidden" class="mt-3" name="redirect_url" value="{{ request.path }}">
+                       </div>
                    </div>
-               </div>
-           </form>
+               </form>
            </div>
        </div>
    </div>

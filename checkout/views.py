@@ -13,6 +13,7 @@ from profiles.models import UserProfile
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -25,7 +26,7 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        message.error(request, 'Sorry something is wrong, your payment can not be \
+        messages.error(request, 'Sorry something is wrong, your payment can not be \
             processed. Please try again later.')
         return HttpResponse(content=e, status=400)
 
@@ -76,7 +77,8 @@ def checkout(request):
                     return redirect(reverse('view_basket'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success', args=[
+                order.order_number]))
         
             messages.error(request, 'There was an error with your form. \
             try  check your information')
@@ -115,10 +117,9 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-    
-
+            
     if not stripe_public_key:
-        message.warning(
+        messages.warning(
             request, 'stripe public key is missing. \
             Did you forget to set in your environment?')
     template = 'checkout/checkout.html'
@@ -137,7 +138,7 @@ def checkout_success(request, order_number):
     """
 
     save_info = request.session.get('save_info')
-    order = get_object_or_404( Order, order_number=order_number )
+    order = get_object_or_404(Order, order_number=order_number)
 
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)

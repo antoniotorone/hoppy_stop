@@ -53,7 +53,6 @@ INSTALLED_APPS = [
 
     # Other Apps
     'crispy_forms',
-    
 ]
 
 MIDDLEWARE = [
@@ -86,10 +85,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'basket.contexts.basket_contents',
             ],
-            'builtins' : [
+            'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
-                 'crispy_forms.templatetags.crispy_forms_field',
-                 
+                'crispy_forms.templatetags.crispy_forms_field',
             ]
         },
     },
@@ -105,7 +103,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SITE_ID = 1 
+SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -116,7 +114,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
- 
 WSGI_APPLICATION = 'hoppy_stop.wsgi.application'
 
 
@@ -188,3 +185,4 @@ STRIPE_CURRENCY = 'GBP'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'hoppystop@example.com'

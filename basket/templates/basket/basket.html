@@ -41,7 +41,11 @@
                          <tr>
                              <div class="col-6">
                                  <td class="p3 w-25">
-                                     <img class=" img-fluid rounded" src="{{ item.product.image.url }}">
+                                    {% if item.product.image %}
+                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                    {% else%}
+                                    <img class="img-fluid rounded" src="{{ item.product.image.url }} noimage.png" alt="{{ item.product.name }}">
+                                    {% endif %}
                                  </td>
                              </div>
                              <td class="p3 w-25">
