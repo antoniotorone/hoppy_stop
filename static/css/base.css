@@ -399,7 +399,10 @@ input{
 
 
 .management-form{
+    border-style: inset;
+    border-color: #0d0d0d;
     width: 100%;
+    border-width: initial;
 }
 
 
