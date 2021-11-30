@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category, Review
+from .models import Product, Category
 from .forms import ProductForm
 
 # create your view here
@@ -125,18 +125,8 @@ def delete_product(request, product_id):
 def add_review(request, id):
     if request.user.is_authenticated:
         product = Product.objects.get(id=id)
-        if request.method == 'POST':
+        if request.method == "POST":
             form = ReviewForm(request.POST or None)
             if form.is_valid():
                 data = form.save(commit=False)
-                data.comment = request.POST["comment"]
-                data.rating = request.POST["rating"]
-                data.user = request.user
-                data.product = product
-                data.save()
-                return redirect('products/product_detail.html',  id)
-        else:
-            form = ReviewForm()
-        return render(request, 'products/product_detail.html', {"form": form})
-    else:
-        return redirect("account:login")#!!!
+                data.comment = request.POST
