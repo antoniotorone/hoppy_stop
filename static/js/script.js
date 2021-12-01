@@ -76,7 +76,7 @@ $(document).ready(function(){
     return new bootstrap.Toast(toastEl)
     });
     toastList.forEach(toast => toast.show()); 
-    console.log(toastList); 
+     
     
 });
 

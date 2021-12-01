@@ -3,7 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
+
 
 # create your view here
 
@@ -128,5 +129,4 @@ def add_review(request, id):
         if request.method == "POST":
             form = ReviewForm(request.POST or None)
             if form.is_valid():
-                data = form.save(commit=False)
-                data.comment = request.POST
+                 form.save()
