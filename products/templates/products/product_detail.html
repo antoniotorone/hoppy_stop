@@ -103,8 +103,9 @@
                <div class="card">
                    <div class="card-body">
                        <ul>
-                           {% for review in reviews %}
-                              <li>{{ review.comment}}<i>{{ review.user }}</i></li>
+                           {% for review in review %}
+                              <li>{{ review.comment}}
+                                  <i>{{ review.user.username }}</i></li>
                            {% endfor %}
                        </ul>
                    </div>

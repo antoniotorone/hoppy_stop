@@ -21,7 +21,6 @@ def basket_contents(request):
             'quantity': item_data,
             'product': product,
         })
-  
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.BASIC_DELIVERY_PERCENTAGE / 100)
@@ -29,9 +28,9 @@ def basket_contents(request):
     else:
         delivery = 0
         free_delivery = 0
-    
+
     grand_total = delivery + total
-    
+
     context = {
         'basket_items': basket_items,
         'total': total,
@@ -41,7 +40,5 @@ def basket_contents(request):
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
     }
-
-    
 
     return context

@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -79,7 +81,7 @@ def checkout(request):
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[
                 order.order_number]))
-        
+
             messages.error(request, 'There was an error with your form. \
             try  check your information')
     else:
@@ -88,7 +90,7 @@ def checkout(request):
             messages.error(
                 request, "No items in you basket ")
             return redirect(reverse('products'))
-            
+
         current_basket = basket_contents(request)
         gross = current_basket['grand_total']
         stripe_total = round(gross * 100)
@@ -117,7 +119,7 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-            
+
     if not stripe_public_key:
         messages.warning(
             request, 'stripe public key is missing. \
@@ -161,8 +163,7 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-
-    messages.success(request, f'Order successfully completed \
+            messages.success(request, f'Order successfully completed \
     Your order number is {order_number}. A confirmation \
          email will be sent to {order.email}.')
 
@@ -175,6 +176,5 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
-
 
 
