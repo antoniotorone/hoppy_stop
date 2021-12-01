@@ -92,7 +92,7 @@ font-size:xx-large;
 }
 
 #account-menu :hover{
-    background-color:wheat;
+    background-color:#fff;
 }
 
 /* INDEX */
@@ -206,6 +206,10 @@ font-size:xx-large;
     color: black;
 }
 
+.keep-get-drink:hover{
+    color: #d41608;
+}
+
 
 
 
@@ -296,6 +300,10 @@ font-size:xx-large;
     text-decoration: none;
     color:green;
     font-weight: bolder;
+}
+
+.checkout :hover{
+    color:#d41608;
 }
 
 /* checkout and sign in input */
