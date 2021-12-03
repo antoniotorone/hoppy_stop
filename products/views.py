@@ -134,7 +134,7 @@ def add_review(request, id):
         if request.method == "POST":
             form = ReviewForm(request.POST or None)
             if form.is_valid():
-                form = form.save(commit= False)
+                form = form.save(commit=False)
                 form.product = product
                 form.user = user
                 form.save()
