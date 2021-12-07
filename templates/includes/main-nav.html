@@ -5,7 +5,7 @@
         <div class="col-3 col-lg-5">
           <a class="navbar-brand" href="{% url 'home' %}">
             <img class="img-fluid"
-              src="{{ MEDIA_URL }}hoppy-stop-logo.png">
+              src="{{ MEDIA_URL }}hoppy-stop-logo.jpg">
           </a>
         </div>
       </div>
@@ -36,50 +36,50 @@
 
           <!--search icon with java script-->
           
-            <i id="icon-search" class="fa fa-search active " aria-hidden="true"></i>
+          <i id="icon-search" class="fa fa-search active " aria-hidden="true"></i>
             
           <!-- account and basket-->
-    <div class="col-12 col-lg-4">
-      <ul>
-        <li class="list-inline-item dropdown">
-          <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <div class="text-center">
-              <div><i class="fas fa-user fa-lg"></i></div>
-              <p class="my-0">My Account</p>
-            </div>
-          </a>
-          <div id="account-menu" class="dropdown-menu border-0 active" aria-labelledby="user-options">
-            {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-            {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
-          </div>
-        </li>
-        <!--Basket-->
-        <li class="list-inline-item">
-          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-            href="{% url 'view_basket' %}">
-            <div class="text-center">
-              <div><i class="fas fa-shopping-basket"></i></div>
-              <p class="my-0">
-                {% if grand_total %}
-                £{{ grand_total|floatformat:2 }}
-                {% else %}
-                £0.00
-                {% endif %}
-              </p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
+     <div class="col-7 col-lg-4">
+       <ul>
+         <li class="list-inline-item dropdown">
+           <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+             aria-expanded="false">
+             <div class="text-center">
+               <div><i class="fas fa-user fa-lg"></i></div>
+               <p class="my-0">My Account</p>
+             </div>
+           </a>
+           <div id="account-menu" class="dropdown-menu border-0 active" aria-labelledby="user-options">
+             {% if request.user.is_authenticated %}
+             {% if request.user.is_superuser %}
+             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+             {% endif %}
+             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+             {% else %}
+             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+             {% endif %}
+           </div>
+         </li>
+         <!--Basket-->
+         <li class="list-inline-item">
+           <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+             href="{% url 'view_basket' %}">
+             <div class="text-center">
+               <div><i class="fas fa-shopping-basket"></i></div>
+               <p class="my-0">
+                 {% if grand_total %}
+                 £{{ grand_total|floatformat:2 }}
+                 {% else %}
+                 £0.00
+                 {% endif %}
+               </p>
+             </div>
+           </a>
+         </li>
+       </ul>
+      </div>
     </div>
   </nav>
 </div>

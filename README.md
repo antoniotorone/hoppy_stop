@@ -333,6 +333,34 @@ All devices wireframes PDF file [view] ()
 
 #### Review
 
+##### Expected
+
+1.  I was expected to send the review post to the admin panel and display the review below the product to be visible for all users.
+
+##### Results
+
+1. As a results, I achieved all functionalities that I was expected.
+
+* [View here](https://res.cloudinary.com/anto8913/image/upload/v1638881377/4th%20milestone/Testing/Review/review_a6txhd.jpg)
+
+* [View here](https://res.cloudinary.com/anto8913/image/upload/v1638881377/4th%20milestone/Testing/Review/review-admin-panel-1_koqwc2.jpg)
+
+* [View here](https://res.cloudinary.com/anto8913/image/upload/v1638881375/4th%20milestone/Testing/Review/review-admin-panel-2_nufgms.jpg)
+
+#### Product Suggestion
+
+##### Expected
+
+1. I was expected to send the product suggestion post to the admin panel with the purpose to get information from the users.
+
+##### Results
+
+1. As a results, I achieved all functionalities that I was expected.
+
+* [View here](https://res.cloudinary.com/anto8913/image/upload/v1638881706/4th%20milestone/Testing/Suggestion/product-suggestion-1_oaucs3.jpg)
+
+* [View here](https://res.cloudinary.com/anto8913/image/upload/v1638881706/4th%20milestone/Testing/Suggestion/product-suggestion-2_qa85nv.jpg)
+
 ### Known Bugs
 
 1. 

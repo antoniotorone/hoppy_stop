@@ -437,12 +437,8 @@ input{
          font-size: smaller;
          margin-right: 0;
      }
-
-}
-
-
-@media only screen and (max-width:576px) {
-    .rounded-pill {
+     
+     .rounded-pill {
         width: 50%;
         padding-left: 15px;
     }
@@ -453,16 +449,35 @@ input{
         font-size: smaller;
         padding-right: 100px;
     }
-
-    .carousel-inner{
-        max-width: 288px;
-    }
+    
+    
 
     .shop-all-btn {
         min-width: 260px;
         margin-top: 15px;
+        margin-left: 45px;
+    }
+    
+    /* Edite and Delete button */
+    #edit{
+        font-size: x-large;
     }
 
+    #delete{
+        font-size: x-large;
+    }
+
+    #quantity{
+        margin-left: 50px;
+    }
+
+    #form-quantity{
+        margin-left: 10px;
+    }
+
+    .form-row input{
+        max-width:70%;
+    }
 }
 
 
