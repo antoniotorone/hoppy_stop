@@ -30,32 +30,36 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Product Info</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Price per item</th>
-                                    <th scope="col">Qty</th>
+                                    <th id="no-content" scope="col"></th>
+                                    <th id="table-price" scope="col">Price</th>
+                                    <th id="table-qty" scope="col">Qty</th>
                                     <th scope="col">Gross</th>
                                 </tr>
                             </thead>
 
                          {% for item in basket_items %}
                          <tr>
-                             <div class="col-6">
-                                 <td class="p3 w-25">
+                             
+                            <td class="p3 w-25">
+                                <div class="col-6">
                                     {% if item.product.image %}
-                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}"
+                                        alt="{{ item.product.name }}">
                                     {% else%}
-                                    <img class="img-fluid rounded" src="{{ item.product.image.url }} noimage.png" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded" src="{{ item.product.image.url }} noimage.png"
+                                        alt="{{ item.product.name }}">
                                     {% endif %}
-                                 </td>
-                             </div>
-                             <td class="p3 w-25">
-                                 <p class=""><strong>{{ item.product.name }}</strong></p>
+                                </div>
+                            </td>
+                            
+                             <td class="name p3 w-25">
+                                 <p><strong>{{ item.product.name }}</strong></p>
                              </td>
                              <td class="p3 w-25">
                                  <p class="price">{{ item.product.price }}</p>
                              </td>
+                             
                              <td class="p3 w-25">
-
                                  <!--Form update or remove quantity-->
                                  <form class="form update-form" method="POST"
                                      action="{% url 'adapt_basket' item.item_id %}">
@@ -71,46 +75,39 @@
                                                  </button>
                                              </div>
 
-                                             <input id="input-basket" class="form-control  qty_input" type="number"
+                                             <input  class="form-control  qty_input" type="number"
                                                  name="quantity" value="{{ item.quantity }}" min="1" max="99"
                                                  data-item_id="{{ product.id}}" id="id_qty_{{ product.id}}">
                                              <div class="input-group-append">
-                                                 <button class="increment-qty btn"
-                                                     data-item_id="{{ product.id }}"
+                                                 <button class="increment-qty btn" data-item_id="{{ product.id }}"
                                                      id="increment-qty_{{ product.id }}">
                                                      <span class="icon">
                                                          <i class="fas fa-plus-square"></i>
                                                      </span>
                                                  </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <a class="update_quantity_item text-success ">Update</a>
-                                    <a class="remove_item text-danger" id="remove_{{ item.item_id }}">Remove</a>
-
-                             </td>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </form>
+                                 <a class="update_quantity_item text-success ">Update</a>
+                                 <a class="remove_item text-danger" id="remove_{{ item.item_id }}">Remove</a>
+                                </td>
                              <td class="">
-                                <p class="my-0">£{{ item.product.price | calc_gross:item.quantity }}</p>
+                                 <p class="my-0">£{{ item.product.price | calc_gross:item.quantity }}</p>
                              </td>
                          </tr>
                          {% endfor %}
-
-                           
                                 <td>
-                                    <h6><strong>Total Basket: £{{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: £{{ delivery|floatformat:2}}</h6>
-                                    <h4><strong>Grand Total: £{{ grand_total|floatformat:2}}</strong></h4>
-                                    {% if free_delivery > 0 %}
-                                    <p class="text-danger">
-                                        Why not get free delivery!!! Just spend £{{ free_delivery}} more
-                                    </p>
-                                    {% endif %}
-                                </td>
-                      
-
-                          
-                                <td class="text-right">
+                                   <h6><strong>Total Basket: £{{ total|floatformat:2 }}</strong></h6>
+                                   <h6>Delivery: £{{ delivery|floatformat:2}}</h6>
+                                   <h4><strong>Grand Total: £{{ grand_total|floatformat:2}}</strong></h4>
+                                   {% if free_delivery > 0 %}
+                                   <p id="delivery-test" class="text-danger">
+                                       Why not get free delivery!!! Just spend £{{ free_delivery}} more
+                                   </p>
+                                   {% endif %}
+                               </td>
+                               <td class="text-right">
                                     <a class="browse-for-more-drink text-dark" href="{% url 'products' %}">
                                         <span class="icon">
                                             <i class="fas fa-shopping-cart"></i>
@@ -120,16 +117,15 @@
                                 </td>
                                 <td class="text-left">
                                     <a class="checkout text-success" href="{% url 'checkout' %}">
-                                        <span class="text-uppercase">Go to the Checkout</span>
+                                        <i class="fas fa-credit-card"></i>
+                                        <span class="text-uppercase">Go to Checkout</span>
                                         <span>
-                                            <i class="fas fa-credit-card"></i>
+                                            
                                         </span>
                                     </a>
                                 </td>
                                 <td></td>
                                 <td></td>
-                                
-                            
                         </table>
                     </div>
                 {% else %}

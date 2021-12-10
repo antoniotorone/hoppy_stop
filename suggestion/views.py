@@ -3,6 +3,9 @@ from django.contrib import messages
 from .models import ProductSuggestion
 from .forms import SuggestionForm
 
+""" Function that submit the suggestion\
+    form and return to the template """
+
 
 def add_suggestion(request):
     if request.user.is_authenticated:
@@ -15,15 +18,13 @@ def add_suggestion(request):
                 form.save()
                 messages.success(request, 'Thank you for your suggestion')
             else:
-                messages.error(request, 'Failed to send your suggestion. Please check your form and try again')
+                messages.error(request, 'Failed to send your suggestion.\
+                Please check your form and try again')
         else:
             form = SuggestionForm()
         template = 'suggestion/suggestion.html'
         context = {
             'form': form,
         }
-   
-        return render(request, template, context)
-        
-        
 
+        return render(request, template, context)

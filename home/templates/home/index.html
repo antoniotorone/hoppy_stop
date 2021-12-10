@@ -5,35 +5,102 @@
 {% block content %}
    <div class="container-fluid">
        <div class="row">
-           <div class="col-12 image-carousel">
+           <div class="col-12-carousel image-carousel">
                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                    <div class="carousel-inner">
                        <div class="carousel-item active">
-                           <img src="{{ MEDIA_URL }}beavertown-carousel.jpg"
-                               class="d-block w-100 img-fluid" alt="beavertown carousel beer images">
+                           <img src="{{ MEDIA_URL }}beavertown-carousel.jpg" class="d-block w-100 img-fluid"
+                               alt="beavertown carousel beer images">
                        </div>
                        <div class="carousel-item">
-                           <img src="{{ MEDIA_URL }}tinyrebel-carousel.jpg"
-                               class="d-block w-100 img-fluid" alt="tiny-rebel-carousel beer images">
+                           <img src="{{ MEDIA_URL }}tinyrebel-carousel.jpg" class="d-block w-100 img-fluid"
+                               alt="tiny-rebel-carousel beer images">
                        </div>
                        <div class="carousel-item">
-                           <img src="{{ MEDIA_URL }}cark-carousel.jpg"
-                               class="d-block w-100 img-fluid" alt="cark-carousel beer images">
+                           <img src="{{ MEDIA_URL }}cark-carousel.jpg" class="d-block w-100 img-fluid"
+                               alt="cark-carousel beer images">
                        </div>
                        <div class="carousel-item">
-                        <img src="{{ MEDIA_URL }}gipsyhill-carousel.jpg"
-                            class="d-block w-100 img-fluid" alt="gipsy-hill beer images">
-                    </div>
+                           <img src="{{ MEDIA_URL }}gipsyhill-carousel.jpg" class="d-block w-100 img-fluid"
+                               alt="gipsy-hill beer images">
+                       </div>
                    </div>
                </div>
            </div>
        </div>
-    
-           <div class="col-12 col-lg-7 offset-lg-5">
-               <button type="button" class="shop-all-btn btn-dark  btn-lg  ">
-                   <a href="{% url 'products'%}"><h4>SHOP ALL</h4></a>
-               </button>
-           </div>
-       
+
+       <div class="col-12 col-lg-7 offset-lg-5">
+           <button type="button" class="shop-all-btn btn-dark  btn-lg  ">
+               <a href="{% url 'products'%}">
+                   SHOP ALL
+               </a>
+           </button>
+       </div>
    </div>
+  
+   <footer>
+       <!--contact-details-->
+       <section class="container-fluid social-back-colour">
+           <div class="row">
+               <div class="col-12 col-lg-10 contact-details ">
+                   <h4>Contact us</h4>
+                   <div class="col-12">
+                       <h6 class="phone-margin-right"><strong><i
+                                   class="fas fa-phone-volume"></i>Phone:+4433459759</strong>
+                       </h6>
+                   </div>
+
+                   <div class="col-12  contact-details">
+                       <a href="mailto:webmaster@example.com" aria-label="">
+                           <h6><strong><i class="fas fa-paper-plane"></i>Email:hoppystop@gmail.com</strong></h6>
+                       </a>
+                   </div>
+                   <div class="col-12  contact-details">
+                       <h6><strong><i class="fas fa-door-open"></i>Monday to Friday: 7:30am - 4:30pm</strong></h6>
+                   </div>
+               </div>
+
+               <!--follow-us-->
+
+               <div class="col-12 col-lg-2 follow-us ">
+                   <h4><strong>Follow us</strong></h4>
+                   <div class="col-12 icons">
+
+                       <a href="https://www.instagram.com/" target="_blank"
+                           aria-label="go to instagram website (opens in a new tab)"><i
+                               class="fab fa-instagram"></i>
+                        </a>
+
+
+                       <a href="https://www.facebook.com/" target="_blank"
+                           aria-label="go to facebook website (opens in a new tab)"><i class="fab fa-facebook"></i>
+                        </a>
+
+
+
+                       <a href="https://www.pinterest.co.uk/" target="_blank"
+                           aria-label="go to pinterest website (opens in a new tab)"><i
+                               class="fab fa-pinterest"></i>
+                        </a>
+
+
+
+                       <a href="https://www.behance.net/" target="_blank"
+                           aria-label="go to behance website (opens in a new tab)"><i
+                               class="fab fa-behance-square"></i>
+                        </a>
+                   </div>
+               </div>
+               
+               <!--copyright-->
+               <div class="row">
+                   <div class="col-12 copyright">
+                       <p><strong>Copyright 2021 Hoppy Stop Ltd. All right reserved. E-commerce beer shop by Antonio
+                               Torone</strong></p>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </footer>
+
 {% endblock %}

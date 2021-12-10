@@ -3,6 +3,8 @@ from .models import Product, Category, Review
 from .widgets import CustomClearableFileInput
 
 
+""" Form that take all the model fields """
+
 
 class ProductForm(forms.ModelForm):
 
@@ -10,7 +12,7 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
 
-    image = forms.ImageField(label='image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label='image', required=True, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -21,6 +23,8 @@ class ProductForm(forms.ModelForm):
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'management-form'
 
+
+""" Form related to the review model with the fields """
 
 
 class ReviewForm(forms.ModelForm):

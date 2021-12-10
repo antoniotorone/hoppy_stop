@@ -1,0 +1,2590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0045)https://jigsaw.w3.org/css-validator/validator -->
+<html lang="$content-language" xml:lang="$content-language" xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta http-equiv="Content-Script-Type" content="text/javascript">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <title>W3C CSS Validator results for TextArea (CSS level 3 + SVG)</title>
+        <link href="http://jigsaw.w3.org/css-validator/" rel="validator">
+        <link type="text/css" rel="stylesheet" href="./all-project-css-file_files/base.css">
+        <link type="text/css" rel="stylesheet" href="./all-project-css-file_files/results.css">
+    <style type="text/css">#w3c-include { display: table; width: 100%; box-sizing: border-box; margin: 1em 0 0 0; padding: 0; }
+.w3c-include { display: table-row; padding-bottom: 1em; }
+.w3c-include > p { display: table-cell; vertical-align: middle; text-align: center; padding-bottom: 1em; }
+.w3c-include > p:first-of-type { padding-right: 1em; width: 20%; padding-left: 2em; }
+.w3c-include > p:last-of-type { padding-right: 2em;}
+.w3c-include-sponsor-img { margin-left: 1em; }
+.FlattrButton { float: right; margin-right: 1em }</style></head>
+    <body data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="">
+      <div id="banner">
+       <h1 id="title"><a href="https://www.w3.org/"><img alt="W3C" width="110" height="61" id="logo" src="./all-project-css-file_files/w3c.png"></a>
+       <a href="https://jigsaw.w3.org/css-validator/"><span>The W3C CSS Validation Service</span></a></h1>
+
+       <p id="tagline">
+         W3C CSS Validator results for TextArea (CSS level 3 + SVG)
+       </p>
+      </div>
+
+        <ul class="navbar" id="jumpbar">
+            <li><strong>Jump to:</strong></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/validator#warnings">Warnings (7)</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/validator#css">Validated CSS</a></li>
+        </ul>
+<div id="results_container">
+   <h2>W3C CSS Validator results for TextArea (CSS level 3 + SVG)</h2>
+        <!-- NO ERRORS -->
+        <div id="congrats">
+            <h3>Congratulations! No Error Found.</h3>
+            <p>
+                This document validates as <a href="http://www.w3.org/Style/CSS/current-work.html">CSS level 3 + SVG</a> ! 
+            </p>
+            <p>
+                To show your readers that you've taken the care to create an interoperable Web page, you may display this icon on any page that validates. Here is the XHTML you could use to add this icon to your Web page:
+            </p>
+            <img class="inline-badge" style="border:0;width:88px;height:31px" src="./all-project-css-file_files/vcss" alt="Valid CSS!">   
+            <pre class="example badgeSnippet">&lt;p&gt;
+    &lt;a href="http://jigsaw.w3.org/css-validator/check/referer"&gt;
+        &lt;img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+            </pre>
+        <img class="inline-badge" style="border:0;width:88px;height:31px" src="./all-project-css-file_files/vcss-blue" alt="Valid CSS!">
+        <pre class="example badgeSnippet">&lt;p&gt;
+&lt;a href="http://jigsaw.w3.org/css-validator/check/referer"&gt;
+    &lt;img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+        </pre>
+            <p>(close the img tag with &gt; instead of /&gt; if using HTML &lt;= 4.01)</p>
+            
+<div id="w3c-include" lang="en" dir="ltr"><script type="text/javascript" async="" src="./all-project-css-file_files/load.js.download"></script><script type="text/javascript" async="" defer="" src="./all-project-css-file_files/matomo.js.download"></script><script type="text/javascript" src="./all-project-css-file_files/w3c-include.js.download"></script><div class="w3c-include" id="w3c-include-validator-donation"><p><a href="https://twitter.com/w3cdevs" title="W3Cdevs" class="w3c-include-validator-donation-img"><img src="./all-project-css-file_files/W3C-Developers-Dark.svg" alt="W3Cdevs logo" height="50" class="w3c-include-sponsor-img"></a></p><p><span class="insert"><span>Interested in understanding what new technologies are coming out of W3C? Follow <a href="https://twitter.com/w3cdevs">@w3cdevs on Twitter</a> to keep track of what the future looks like!</span></span><br><br><span><a href="https://www.w3.org/QA/Tools/Donate">Donate</a> and help us build better tools for a better web.</span></p></div></div>
+            
+            <p>
+                If you like, you can download a copy of this image to keep in your local web directory, and change the XHTML fragment above to reference your local image rather than the one on this server.
+            </p>
+            <p>
+                If you would like to create a link to this page (i.e., this validation result) to make it easier to re-validate this page in the future or to allow others to validate your page, the URI is:
+            </p>
+<pre>http://jigsaw.w3.org/css-validator/validator$link
+or
+http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)
+</pre>
+            <p>(Or, you can just add the current page to your bookmarks or hotlist.)</p>
+
+        </div>
+        <p class="backtop"><a href="https://jigsaw.w3.org/css-validator/validator#banner">↑ Top</a></p>
+
+        <!-- DEALING WITH WARNINGS -->
+        <div id="warnings">
+            <h3>Warnings (7)</h3>
+            <div class="warning-section-all">
+                <div class="warning-section">
+                    <h4>URI : TextArea</h4>
+                    <table>
+                        <tbody><tr class="warning">
+                            <td class="linenumber" title="Line 85">85</td>
+                            <td class="codeContext"> #account-menu </td>
+                            <td class="level1" title="warning level 1">Same color for <code>background-color</code> and <code>color</code></td>
+                        </tr>
+                        <tr class="warning">
+                            <td class="linenumber" title="Line 333">333</td>
+                            <td class="codeContext"></td>
+                            <td class="level0" title="warning level 0"><code>-webkit-user-select</code> is a vendor extension</td>
+                        </tr>
+                        <tr class="warning">
+                            <td class="linenumber" title="Line 334">334</td>
+                            <td class="codeContext"></td>
+                            <td class="level0" title="warning level 0"><code>-moz-user-select</code> is a vendor extension</td>
+                        </tr>
+                        <tr class="warning">
+                            <td class="linenumber" title="Line 335">335</td>
+                            <td class="codeContext"></td>
+                            <td class="level0" title="warning level 0"><code>-ms-user-select</code> is a vendor extension</td>
+                        </tr>
+                        <tr class="warning">
+                            <td class="linenumber" title="Line 353">353</td>
+                            <td class="codeContext"> .allauth-form-new-content button:hover </td>
+                            <td class="level1" title="warning level 1">Same color for <code>background-color</code> and <code>border-color</code></td>
+                        </tr>
+                        <tr class="warning">
+                            <td class="linenumber" title="Line 353">353</td>
+                            <td class="codeContext"> .allauth-form-new-content input[type="submit"]:hover </td>
+                            <td class="level1" title="warning level 1">Same color for <code>background-color</code> and <code>border-color</code></td>
+                        </tr>
+                        <tr class="warning">
+                            <td class="linenumber" title="Line 375">375</td>
+                            <td class="codeContext"></td>
+                            <td class="level0" title="warning level 0"><code>-internal-light-dark(rgb(118, 118, 118),rgb(133, 133, 133))</code> is a vendor extension</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+        <p class="backtop"><a href="https://jigsaw.w3.org/css-validator/validator#banner">↑ Top</a></p>
+
+        <div id="css">
+            <h3>Valid CSS information</h3>
+            <div class="vAtRule">
+
+                    <div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .body
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-family</span> :
+                                    <span class="PropertyValue">serif</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .header
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background</span> :
+                                    <span class="PropertyValue">linear-gradient(1deg, black, #00000094)</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">12px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-bottom</span> :
+                                    <span class="PropertyValue">auto</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .navbar-brand
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">80px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .container-fluid-nowrap
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">display</span> :
+                                    <span class="PropertyValue">flex</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">flex-wrap</span> :
+                                    <span class="PropertyValue">initial</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">align-items</span> :
+                                    <span class="PropertyValue">center</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">justify-content</span> :
+                                    <span class="PropertyValue">space-between</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .header a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">larger</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-right</span> :
+                                    <span class="PropertyValue">80px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .header a:hover
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">#d41608</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .header button
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #beer-menu
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #icon-search
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">32px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #delivery-banner
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .search-box
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">display</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .search-box input
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">height</span> :
+                                    <span class="PropertyValue">70px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">100%</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .search-box ::placeholder
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .text-center p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #account-menu
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .image-carousel
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-bottom</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .shop-all-btn
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">min-width</span> :
+                                    <span class="PropertyValue">260px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .shop-all-btn a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .overlay
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">height</span> :
+                                    <span class="PropertyValue">100%</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">100%</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">top</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">position</span> :
+                                    <span class="PropertyValue">fixed</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">background</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">z-index</span> :
+                                    <span class="PropertyValue">-1</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .card-body p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">larger</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #top-arrow
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">float</span> :
+                                    <span class="PropertyValue">right</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-bottom</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-right</span> :
+                                    <span class="PropertyValue">50px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">cursor</span> :
+                                    <span class="PropertyValue">pointer</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #suggestion-message
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">#e7e1dc</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .card-img-top
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .product-details-container
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .product-details-container h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">green</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">700</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .product-details-container h5
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .product-details-container p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">500</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .rounded-pill
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-bottom</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-top</span> :
+                                    <span class="PropertyValue">2px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border-color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">42%</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">height</span> :
+                                    <span class="PropertyValue">30px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">background</span> :
+                                    <span class="PropertyValue">linear-gradient(45deg, #d41608, transparent)</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-row p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-row strong
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">70px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">larger</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-row input
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">max-width</span> :
+                                    <span class="PropertyValue">30%</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .increment-qty i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">x-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .decrement-qty i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">x-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .message-container
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">position</span> :
+                                    <span class="PropertyValue">fixed</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">top</span> :
+                                    <span class="PropertyValue">72px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">right</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">z-index</span> :
+                                    <span class="PropertyValue">9999999999</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #body-review
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background</span> :
+                                    <span class="PropertyValue">linear-gradient(45deg, #d7d0ca, transparent)</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #review p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">300</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #success
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">green</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #error
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">red</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #info
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">rgb(73, 231, 231)</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #warning
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">#ffc107</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .basket-preview
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">height</span> :
+                                    <span class="PropertyValue">100px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">overflow-x</span> :
+                                    <span class="PropertyValue">hidden</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">overflow-y</span> :
+                                    <span class="PropertyValue">auto</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .message-container
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">position</span> :
+                                    <span class="PropertyValue">fixed</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">top</span> :
+                                    <span class="PropertyValue">72px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">right</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">z-index</span> :
+                                    <span class="PropertyValue">9999999999</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .price
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">30px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-control
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">border</span> :
+                                    <span class="PropertyValue">black solid 1px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">max-width</span> :
+                                    <span class="PropertyValue">initial</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .update_quantity_item
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">12px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">5px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">cursor</span> :
+                                    <span class="PropertyValue">pointer</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .remove_item
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">cursor</span> :
+                                    <span class="PropertyValue">pointer</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .checkout
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">green</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                input
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-family</span> :
+                                    <span class="PropertyValue">inherit</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">inherit</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">line-height</span> :
+                                    <span class="PropertyValue">inherit</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">100%</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #id_remember
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">10%</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .allauth-form-new-content label:not([for="id_remember"])
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">display</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .allauth-form-new-content input
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">border-color</span> :
+                                    <span class="PropertyValue">#000</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border-radius</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border-width</span> :
+                                    <span class="PropertyValue">thin</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-bottom</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .allauth-form-new-content input::placeholder
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">rgb(128, 128, 128)</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .allauth-form-new-content button, .allauth-form-new-content input[type="submit"]
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">display</span> :
+                                    <span class="PropertyValue">inline-block</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">400</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">#fff</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">text-align</span> :
+                                    <span class="PropertyValue">center</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">vertical-align</span> :
+                                    <span class="PropertyValue">middle</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">user-select</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">#000</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border</span> :
+                                    <span class="PropertyValue">#000 solid 1px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding</span> :
+                                    <span class="PropertyValue">0.375rem 0.75rem</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">1rem</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">line-height</span> :
+                                    <span class="PropertyValue">1.5</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border-radius</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">transition</span> :
+                                    <span class="PropertyValue">color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .allauth-form-new-content button:hover, .allauth-form-new-content input[type="submit"]:hover
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">#fff</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">#222</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border-color</span> :
+                                    <span class="PropertyValue">#222</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #id_login
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-bottom</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .allauth-form-new-content a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">border-color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">#050905</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #id_default_country
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">100%</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .order-history
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">max-height</span> :
+                                    <span class="PropertyValue">416px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">overflow-y</span> :
+                                    <span class="PropertyValue">auto</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .controls
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-bottom</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .management-form
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">border-style</span> :
+                                    <span class="PropertyValue">inset</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border-color</span> :
+                                    <span class="PropertyValue">#0d0d0d</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">100%</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">border-width</span> :
+                                    <span class="PropertyValue">initial</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .functions-button-add
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .function-button-edit
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                <div class="atRule">
+                    <span class="atSelector">
+                        @media only screen and (max-width: 576px)
+                    </span>
+                    {
+                    <div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .header i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">x-small</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .container-fluid-nowrap
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">display</span> :
+                                    <span class="PropertyValue">flex</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">flex-wrap</span> :
+                                    <span class="PropertyValue">initial</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">align-items</span> :
+                                    <span class="PropertyValue">center</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">justify-content</span> :
+                                    <span class="PropertyValue">space-between</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .header i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">medium</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #logo
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #beer-button
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">medium</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-top</span> :
+                                    <span class="PropertyValue">30px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #icon-search
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">10px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .text-black
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .container-fluid a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">smaller</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-right</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .rounded-pill
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">width</span> :
+                                    <span class="PropertyValue">50%</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #delivery-banner h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">smaller</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .shop-all-btn
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">min-width</span> :
+                                    <span class="PropertyValue">260px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">45px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #top-arrow
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #edit
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">x-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #delete
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">x-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #quantity
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">50px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #form-quantity
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">10px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-row input
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">max-width</span> :
+                                    <span class="PropertyValue">70%</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .browse-for-more-drink
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #shop-more-link
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">x-small</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .add-to-basket
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #no-content
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">display</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .name
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">display</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .price
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">5px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .decrement-qty
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">larger</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .increment-qty
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">larger</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-group
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-right</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .update_quantity_item
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .remove_item
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .browse-for-more-drink
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">smaller</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .checkout
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">smaller</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #delivery-test
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">smaller</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .function-button-add
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .function-button-edit
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-detalis h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                footer
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">30px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-bottom</span> :
+                                    <span class="PropertyValue">10px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details h6
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-bottom</span> :
+                                    <span class="PropertyValue">10px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .follow-us a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .follow-us i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .copyright p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bold</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .social-back-colour
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">floralwhite</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                    }
+                </div>
+                    <div>
+                    </div>
+                <div class="atRule">
+                    <span class="atSelector">
+                        @media only screen and (min-width: 768px)
+                    </span>
+                    {
+                    <div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .header i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">white</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #beer-button
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-top</span> :
+                                    <span class="PropertyValue">80px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">45px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #my-account
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">margin-right</span> :
+                                    <span class="PropertyValue">20px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .shop-all-btn
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">260px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #top-arrow
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #quantity
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">60px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-row input
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">max-width</span> :
+                                    <span class="PropertyValue">100%</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .add-to-basket
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">10px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bold</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .browse-for-more-drink
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">smaller</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bold</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #table-price
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">35px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #table-qty
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">65px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .function-button-add
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .function-button-edit
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-detalis h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                footer
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">30px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-bottom</span> :
+                                    <span class="PropertyValue">10px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details h6
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-bottom</span> :
+                                    <span class="PropertyValue">10px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .follow-us a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .follow-us i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .copyright p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-top</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bold</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .social-back-colour
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">floralwhite</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                    }
+                </div>
+                    <div>
+                    </div>
+                <div class="atRule">
+                    <span class="atSelector">
+                        @media only screen and (min-width: 992px)
+                    </span>
+                    {
+                    <div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .shop-all-btn
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #top-arrow
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .form-row input
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">max-width</span> :
+                                    <span class="PropertyValue">30%</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #quantity
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-left</span> :
+                                    <span class="PropertyValue">0</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .add-to-basket
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bold</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .browse-for-more-drink
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">initial</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bold</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #table-price
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">25px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                #table-qty
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-left</span> :
+                                    <span class="PropertyValue">135px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-detalis h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bolder</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                footer
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">margin-top</span> :
+                                    <span class="PropertyValue">30px</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">text-decoration</span> :
+                                    <span class="PropertyValue">none</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details h4
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .contact-details h6
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .follow-us a
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">color</span> :
+                                    <span class="PropertyValue">black</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .follow-us i
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">padding-right</span> :
+                                    <span class="PropertyValue">15px</span>;
+                                </div>
+                                <div class="Rule">
+                                    <span class="Property">font-size</span> :
+                                    <span class="PropertyValue">xx-large</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .copyright p
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">font-weight</span> :
+                                    <span class="PropertyValue">bold</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="selector">
+                            <span class="selectorValue">
+                                .social-back-colour
+                            </span>
+                            {
+                            <div class="RuleList">
+                                <div class="Rule">
+                                    <span class="Property">background-color</span> :
+                                    <span class="PropertyValue">floralwhite</span>;
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                    }
+                </div>
+                    <div>
+                    </div>
+            </div>
+        </div>
+        <p class="backtop"><a href="https://jigsaw.w3.org/css-validator/validator#banner">↑ Top</a></p>
+</div><!-- results_container -->
+        <ul class="navbar" id="menu">
+            <li><strong><a href="https://jigsaw.w3.org/css-validator/" title="Home page for the W3C CSS Validation Service">Home</a></strong> <span class="hideme">|</span></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/about.html" title="About this service">About</a> <span class="hideme">|</span></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/documentation.html" title="Documentation for the W3C CSS Validation Service">Documentation</a> <span class="hideme">|</span></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/DOWNLOAD.html" title="Download and install the CSS validator">Download</a> <span class="hideme">|</span></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/Email.html" title="How to provide feedback on this service">Feedback</a> <span class="hideme">|</span></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/thanks.html" title="Credits and Acknowlegments">Credits</a></li>
+        </ul>
+
+<div id="footer">
+        <p id="activity_logos">
+            <a href="https://www.w3.org/QA/" title="W3C&#39;s Quality Assurance Activity, bringing you free Web quality tools and more"><img src="./all-project-css-file_files/qa-small.png" alt="QA"></a><a href="https://www.w3.org/Style/CSS/learning" title="Learn more about Cascading Style Sheets"><img src="./all-project-css-file_files/woolly-icon" alt="CSS"></a>
+        </p>
+        <p id="support_logo">
+        <a href="https://www.w3.org/QA/Tools/Donate">
+        <img src="./all-project-css-file_files/I_heart_validator" alt="I heart Validator logo" title=" Validators Donation Program">
+        </a>
+        </p>
+        <p class="copyright">
+            <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+            © 1994-2014
+            <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a>®
+            (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
+            <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+            <a href="http://www.keio.ac.jp/">Keio</a>,
+	   <a href="http://ev.buaa.edu.cn/">Beihang</a>),
+            All Rights Reserved.
+            W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+            <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>,
+            <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
+            and <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software licensing</a>
+            rules apply. Your interactions with this site are in accordance
+            with our <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a> and
+            <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.
+        </p>
+</div>
+    
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

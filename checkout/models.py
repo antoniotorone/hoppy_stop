@@ -13,7 +13,7 @@ from products.models import Product
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
-        UserProfile, on_delete=models.SET_NULL, 
+        UserProfile, on_delete=models.SET_NULL,
         null=True, blank=True, related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=True)
     email = models.EmailField(max_length=254, null=False, blank=True)
@@ -53,7 +53,9 @@ class Order(models.Model):
         self.order_gross = self.lineitems.aggregate(
             Sum('lineitem_gross'))['lineitem_gross__sum'] or 0
         if self.order_gross < settings.FREE_DELIVERY_THRESHOLD:
-            self.delivery_cost = self.order_gross * settings.BASIC_DELIVERY_PERCENTAGE / 100
+            self.delivery_cost = (
+                self.order_gross * settings.BASIC_DELIVERY_PERCENTAGE / 100
+            )
         else:
             self.delivery_cost = 0
         self.grand_total = self.order_gross + self.delivery_cost
@@ -74,7 +76,7 @@ class Order(models.Model):
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(
-        Order, null=False, blank=False, 
+        Order, null=False, blank=False,
         on_delete=models.CASCADE, related_name='lineitems'
     )
     product = models.ForeignKey(
@@ -92,5 +94,3 @@ class OrderLineItem(models.Model):
         """
         self.lineitem_gross = self.product.price * self.quantity
         super().save(*args, **kwargs)
-
-    

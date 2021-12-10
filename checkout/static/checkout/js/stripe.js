@@ -1,5 +1,3 @@
-
-
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
@@ -56,7 +54,7 @@ form.addEventListener('submit', function (ev) {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
         'save_info': saveInfo,
-    }
+    };
     var url = '/checkout/cache_checkout_data/';
 
     $.post(url,postData).done(function() {
@@ -113,6 +111,6 @@ form.addEventListener('submit', function (ev) {
     }).fail(function(){
         // Reload the page, the error will appear in django messages
         location.reload();
-    })
+    });
   
 });

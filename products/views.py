@@ -26,16 +26,15 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-               
+
                 messages.error(request, "No results matched your query")
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(taste__icontains=query) | Q(style__icontains=query)
             products = products.filter(queries)
         if not products:
-              messages.error(request, "No results matched your query")
-              return redirect(reverse('products'))
-
+            messages.error(request, "No results matched your query")
+            return redirect(reverse('products'))
 
     context = {
         'products': products,
@@ -51,23 +50,24 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     review = Review.objects.filter(product=product)
-   
 
     context = {
         'review': review,
         'product': product,
 
     }
-    
+
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
     """ The shop owner can add a product to the store"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry this functionality is only for the store owners')
+        messages.error(
+            request, 'Sorry this functionality is only for the store owners')
         return redirect(reverse('home'))
-        
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -75,22 +75,26 @@ def add_product(request):
             messages.success(request, 'Product successfully added')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please check your form and try again')
+            messages.error(
+                request,
+                'Failed to add product. Please check your form and try again')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
 
-    return render(request, template, context) 
+    return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
     """ Edit a product"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry this functionality is only for the store owners')
+        messages.error(
+            request, 'Sorry this functionality is only for the store owners')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -101,7 +105,7 @@ def edit_product(request, product_id):
             messages.success(request, 'Product updated with success')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to edit a product. Please check your form and try again')
+            messages.error(request, 'Failed to edit.Please check your form and try again')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing { product.name }')
@@ -114,11 +118,13 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_product(request, product_id):
     """ delete a product"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry this functionality is only for the store owners')
+        messages.error(
+            request, 'Sorry this functionality is only for the store owners')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -130,7 +136,7 @@ def delete_product(request, product_id):
 def add_review(request, id):
     if request.user.is_authenticated:
         product = get_object_or_404(Product, id=id)
-        user = request.user 
+        user = request.user
         if request.method == "POST":
             form = ReviewForm(request.POST or None)
             if form.is_valid():

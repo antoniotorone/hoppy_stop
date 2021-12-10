@@ -1,22 +1,22 @@
 <div class="row header">
   <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
+    <div class="container-fluid-nowrap">
       <div class="row">
-        <div class="col-3 col-lg-5">
+        <div id="logo" class="col-12 col-lg-10">
           <a class="navbar-brand" href="{% url 'home' %}">
-            <img class="img-fluid"
-              src="{{ MEDIA_URL }}hoppy-stop-logo.png">
+            <img class=" img-fluid"
+              src="{{ MEDIA_URL }}hoppy-stop-logo.png" alt="logo-shop">
           </a>
         </div>
       </div>
       <!--Beer button mobile-phone-->
-      <i id="beer-button" class="fas fa-beer navbar-toggler" type="button" data-bs-toggle="collapse"
+      <i id="beer-button" class="fas fa-beer navbar-toggler"  data-bs-toggle="collapse" role="button"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
 
       </i>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-labelledby="products-link">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" aria-label="products-link">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav" aria-current="page" href="{% url 'products' %}?category=Beers">BEERS</a>
@@ -28,8 +28,7 @@
             <a class="nav" href="{% url 'products' %}?category=Mini_Kegs">KEGS</a>
           </li>
           <li class="nav-item">
-            <a a class="nav" href="{% url 'products' %}?category=Glasses">GLASSES</a>
-            </a>
+            <a class="nav" href="{% url 'products' %}?category=Glasses">GLASSES</a>
           </li>
         </ul>
       </div>
@@ -39,7 +38,7 @@
           <i id="icon-search" class="fa fa-search active " aria-hidden="true"></i>
             
           <!-- account and basket-->
-     <div class="col-7 col-lg-4">
+     <div class="col-12 col-lg-4">
        <ul>
          <li class="list-inline-item dropdown">
            <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -49,7 +48,7 @@
                <p class="my-0">My Account</p>
              </div>
            </a>
-           <div id="account-menu" class="dropdown-menu border-0 active" aria-labelledby="user-options">
+           <div id="account-menu" class="dropdown-menu border-0 active" aria-label="user-options">
              {% if request.user.is_authenticated %}
              {% if request.user.is_superuser %}
              <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>

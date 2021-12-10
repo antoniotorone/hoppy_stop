@@ -34,7 +34,7 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
-     
+
     def handle_event(self, event):
         """ Take care of unexpected webhook event """
 
@@ -79,7 +79,7 @@ class StripeWH_Handler:
                 )
                 order_exists = True
                 break
-               
+
             except Order.DoesNotExist:
                 attempt += 1
                 time.sleep(1)
@@ -127,7 +127,8 @@ class StripeWH_Handler:
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):
-        """ Take care about the payment_intent.payment_failed webhook from stripe"""
+        """ Take care about the payment_intent.payment_failed \
+        webhook from stripe"""
 
         return HttpResponse(
             content=f' Webhook received: {event["type"]}',

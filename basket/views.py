@@ -38,8 +38,7 @@ def add_to_basket(request, item_id):
 
 
 def adapt_basket(request, item_id):
-    """ Adabt the quantity and the amount 
-    of the specified item to the basket"""
+    """Adabt the quantity and the amount of the specified item to the basket"""
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     basket = request.session.get('basket', {})

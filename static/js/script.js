@@ -5,8 +5,8 @@ $(document).ready(function(){
     });
     // arrow functionality in products to go back to the top//
     $("#top-arrow").click(function(){
-        window.scrollTo(0,0)
-    })
+        window.scrollTo(0,0);
+    });
 
 
      // Disable +/- buttons outside 1-99 range
@@ -54,9 +54,9 @@ $(document).ready(function(){
     // Update and remove item quantity in basket page //
     $('.update_quantity_item').click(function (e) {
         var update_form = $(this).prev('.update-form');
-        console.log(update_form)
+        console.log(update_form);
         update_form.submit();
-    })
+    });
 
     $('.remove_item').click(function (e) {
         var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
@@ -68,12 +68,12 @@ $(document).ready(function(){
           .done(function(){
               location.reload();
           });
-    })
+    });
 
     // TOASTS //
-    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'));
     var toastList = toastElList.map(function(toastEl) {
-    return new bootstrap.Toast(toastEl)
+    return new bootstrap.Toast(toastEl);
     });
     toastList.forEach(toast => toast.show()); 
      

@@ -152,6 +152,9 @@ All devices wireframes PDF file [view] ()
 
 ### Validator Testing
 
+ The W3C Markup Validator  W3C CSS validator Pep8 python validation and JS Hint services were used to validate every page and ensure there were no syntax errors in the project.
+
+ * [All test here]()
 
 ### Manual Testing
 
@@ -363,7 +366,7 @@ All devices wireframes PDF file [view] ()
 
 ### Known Bugs
 
-1. 
+1. All the errors are mentioned inside the validation test folders [View here]()
 
 ## Deployment
 

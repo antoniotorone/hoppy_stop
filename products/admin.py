@@ -5,7 +5,7 @@ from .models import Product, Category, Review
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ( 
+    list_display = (
         'name',
         'category',
         'style',
@@ -13,7 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'image',
     )
-    
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (

@@ -6,6 +6,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order
 
+
 @login_required
 def profile(request):
     """ Display the user profile"""
@@ -17,7 +18,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated with success')
         else:
-            messages.error(request, 'Update failed. Please check your form and try again')
+            messages.error(
+                request, 'Update failed. Please check your form and try again')
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -31,10 +33,11 @@ def profile(request):
 
     return render(request, template, context)
 
+
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
-    messages.info(request,(
+    messages.info(request, (
         f'This is a old confirmation for the order {order_number}.'
         'An email confirmation was sent on the same order day'
     ))

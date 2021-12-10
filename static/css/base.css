@@ -1,24 +1,29 @@
 
-/*HEADER*/
+/*Header*/
 
-.body{
+.body {
     font-family: serif
 }
-.header{
+
+.header {
     background: linear-gradient( 1deg, black, #00000094 );
     padding-left: 12px;
     padding-right: 0;
     margin-bottom: auto;
 }
 
-
-
-.navbar-brand{
+.navbar-brand {
     padding-right: 80px;
 }
 
+.container-fluid-nowrap{
+    display: flex;
+    flex-wrap: initial;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.header a{
+.header a {
    
     text-decoration: none;
     color: white;
@@ -28,61 +33,52 @@
    
 }
 
-
-
 .header a:hover{
   color: #d41608;
 }
- 
-   
-  
 
 
-.header i{
-    font-size: xx-large;
-    color: white;
-    
-    
-}
 
-.header button{
+.header button {
     background-color: white;
 }
 
 /* beer-menu id, visible  only on mobile-phone device */
-#beer-menu{
+
+#beer-menu {
     color: black;
 }
 
-#icon-search{
+#icon-search {
     margin-top:32px;
 }
 
-/* delivery banner*/
+/* Delivery banner*/
+
 #delivery-banner{
-   
-    background-color:black
+   background-color:black
 }
 
 /* input and input submit elements*/
-.search-box{
+
+.search-box {
     display: none;
 }
 
-.search-box input{
+.search-box input {
    height: 70px;
    width: 100%;
    background-color:white
  
 }
 
-.search-box ::placeholder{
+.search-box ::placeholder {
 color:black;
 font-size:xx-large;
 }
 
 /* account and basket p*/
-.text-center p{
+.text-center p {
     color: white;
 }
 
@@ -91,20 +87,19 @@ font-size:xx-large;
     color: black;
 }
 
-
-
 /* INDEX */
 
-.image-carousel{
+.image-carousel {
    padding: 0;
+   padding-bottom: 25px;
 }
 
-.shop-all-btn{
+.shop-all-btn {
     min-width: 260px;
     margin-top: 15px;
 }
 
-.shop-all-btn a{
+.shop-all-btn a {
     color:white;
     text-decoration: none;
 }
@@ -112,13 +107,13 @@ font-size:xx-large;
 
 /* PRODUCTS */
 
-.overlay{
+.overlay {
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     position: fixed;
-    background: white;/*??*/
+    background: white;
     z-index: -1;
 }
 
@@ -129,7 +124,7 @@ font-size:xx-large;
 }
 
 
-#top-arrow{
+#top-arrow {
     font-size: xx-large;
     float: right;
     margin-top: 0;
@@ -140,36 +135,36 @@ font-size:xx-large;
     cursor: pointer;
 }
 
-#suggestion-message{
+#suggestion-message {
     background-color: #e7e1dc;
     margin-top: 25px;
 }
 
 /*Product detail*/
 
-.card-img-top{
+.card-img-top {
    margin-top: 25px;
 }
 
-.product-details-container{
+.product-details-container {
     margin-top: 25px;
 }
 
-.product-details-container h4{
+.product-details-container h4 {
     color: green;
     font-weight: 700;
 }
 
-.product-details-container h5{
+.product-details-container h5 {
      color:black;
 }
 
-.product-details-container p{
+.product-details-container p {
       margin-top: 15px;
       font-weight: 500;
 }
 
-.rounded-pill{
+.rounded-pill {
     margin-bottom: 25px;
     padding-top: 2px;
     border-color: black;
@@ -180,43 +175,28 @@ font-size:xx-large;
     background: linear-gradient(45deg, #d41608, transparent);
 }
 
-.form-row p{
+.form-row p {
   margin-top: 25px;
 }
 
-.form-row strong{
+.form-row strong {
     padding-left: 70px;
     font-size: larger;
 }
 
 /* quantity input */
-.form-row input{
+
+.form-row input {
     max-width: 30%;
 }
 
-.increment-qty i{
+.increment-qty i {
     font-size: x-large;
 }
 
-.decrement-qty i{
+.decrement-qty i {
     font-size: x-large;
 }
-
-.browse-for-more-drink{
-    font-size: initial;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-
-
-
-.add-to-basket{
-   
-    padding-right: 25px;
-    font-weight: bold;
-}
-
 
 .message-container {
     position:fixed;
@@ -226,23 +206,24 @@ font-size:xx-large;
 }
 
 /* Review-Form*/
-#review{
+#body-review {
     background:linear-gradient(45deg, #d7d0ca, transparent)
 }
 
-#review p{
+#review p {
     font-weight: 300;
 }
 
 
+
+
 /* TOASTS*/
 
-
-#success{
+#success {
     color: green;
 }
 
-#error{
+#error {
     color: red;
 }
 
@@ -250,12 +231,12 @@ font-size:xx-large;
     color:rgb(73, 231, 231)
 }
 
-#warning{
+#warning {
     color:#ffc107
 }
  
 /* Toast_success*/
-.basket-preview{
+.basket-preview {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -275,18 +256,20 @@ font-size:xx-large;
 
 /* table */
 
-.price{
+.price {
     padding-left: 30px;
 }
 
 /* quantity input */
-.form-control{
+
+.form-control {
     border: 1px solid black;
     max-width: initial;
 }
 
 
 /* update and remove links*/
+
 .update_quantity_item {
     margin-left: 12px;
     text-decoration: none;
@@ -295,13 +278,13 @@ font-size:xx-large;
     cursor: pointer;
 }
 
-.remove_item{
+.remove_item {
     text-decoration: none;
     font-weight: bolder;
     cursor: pointer;
 }
 
-.checkout{
+.checkout {
     text-decoration: none;
     color:green;
     font-weight: bolder;
@@ -319,7 +302,7 @@ input{
     width: 100%;
 }
 
-#id_remember{
+#id_remember {
     margin-top: 25px;
     width:10%;
 }
@@ -374,7 +357,7 @@ input{
 
 
 
-#id_login{
+#id_login {
     margin-bottom: 25px;
 }
 
@@ -389,25 +372,19 @@ input{
 
 /* My Profile Form */
 
-#id_default_country{
+#id_default_country {
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     width:100%;
 }
 
-.order-history{
+.order-history {
     max-height: 416px;
     overflow-y: auto;
 }
 
-
-
-
-
-
-.controls{
+.controls {
     margin-bottom: 25px;
 }
-
 
 .management-form{
     border-style: inset;
@@ -416,24 +393,62 @@ input{
     border-width: initial;
 }
 
+/* Add product-Product management */
+
+.functions-button-add {
+    margin-top: 15px;
+} 
+
+/* Edit product-Product management */
+
+.function-button-edit {
+    margin-top: 15px;
+}
 
 
 
 
 
+/* MOBILE-PHONE */
 
-/*mobile-phone*/
 @media only screen and (max-width:576px) {
-   .header i{
-         font-size: larger;
+
+    .header i {
+        font-size:x-small;
+        color: white;
+    }
+
+    .container-fluid-nowrap{
+        display: flex;
+        flex-wrap: initial;
+        align-items: center;
+        justify-content: space-between;
+    }
+   .header i {
+         font-size: medium;
      }
 
-     #beer-button{
-         padding-top: 40px;
-         padding-right: 0;
+     #logo{
+         padding-left: 0;
      }
 
-     .container-fluid a{
+     #beer-button {
+         font-size: medium;
+         padding-left: 0;
+         padding-right: 15px;
+         padding-top: 30px;
+     }
+
+     #icon-search{
+         margin-top: 10px;
+     }
+
+     .text-black{
+         padding-right:0;
+         padding-left:0;
+     }
+
+     .container-fluid a {
          font-size: smaller;
          margin-right: 0;
      }
@@ -445,39 +460,387 @@ input{
 
     /*index*/
 
-    #delivery-banner h4{
+
+    #delivery-banner h4 {
         font-size: smaller;
-        padding-right: 100px;
+        
     }
     
-    
-
     .shop-all-btn {
         min-width: 260px;
         margin-top: 15px;
         margin-left: 45px;
     }
+
+    /*Products*/
+
+    #top-arrow {
+        margin-top: 15px;
+    }
+
+    /*Product Details*/
     
     /* Edite and Delete button */
-    #edit{
+    #edit {
         font-size: x-large;
     }
 
-    #delete{
+    #delete {
         font-size: x-large;
     }
 
-    #quantity{
+    #quantity {
         margin-left: 50px;
     }
 
-    #form-quantity{
+    #form-quantity { 
         margin-left: 10px;
     }
 
-    .form-row input{
+    .form-row input {
         max-width:70%;
     }
+
+    .browse-for-more-drink {
+        text-decoration: none;
+        color: black;
+        }
+
+    #shop-more-link {
+        font-size: x-small;
+        font-weight: bolder;
+    }
+
+    .add-to-basket {
+        padding-right: 0;
+    }
+
+    #no-content {
+        display: none;
+    }
+
+    /* Basket */
+
+    .name {
+        display: none;
+    }
+
+    .price {
+        padding-left: 5px;
+    }
+
+    .decrement-qty {
+        font-size: larger;
+    }
+
+    .increment-qty {
+        font-size: larger;
+    }
+
+    .form-group {
+        margin-right: 15px;
+    }
+
+    .update_quantity_item {
+        margin-left: 0;
+    }
+
+    .remove_item {
+        margin-left: 0;
+    }
+
+    .browse-for-more-drink {
+        font-size: smaller;
+    }
+
+    .checkout{
+        font-size: smaller;
+    }
+
+    #delivery-test {
+        font-size: smaller;
+
+    }
+
+    /* Add product-Product management */
+
+    .function-button-add {
+        margin-top: 15px;
+    } 
+
+    /* Edit product */
+    
+    .function-button-edit {
+        margin-top: 15px;
+    }
+
+    /* Footer */
+
+    .contact-detalis h4{
+        font-weight:bolder;
+        font-size: xx-large;
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+
+    .contact-details a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact-details h4{
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    .contact-details h6{
+        padding-bottom: 10px;
+        color:black
+    }
+    
+    .follow-us a{
+        padding-top: 15px;
+        color:black;
+    }
+
+    .follow-us i{
+        padding-right: 15px;
+        font-size: xx-large;
+    }
+
+    .copyright p{
+        padding-top: 15px;
+        font-weight: bold;
+
+    }
+
+    .social-back-colour{
+        background-color: floralwhite;
+    }
+
 }
+
+
+@media only screen and (min-width:768px){
+
+    /* Header */
+
+    .header i {
+        font-size: xx-large;
+        color: white;
+    }
+
+    #beer-button{
+        padding-top: 80px;
+        padding-right: 45px;
+    }
+
+    
+
+    #my-account{
+        margin-top:25px;
+        margin-right: 20px;
+        padding-left: 25px;
+
+    }
+
+    /* Index */
+    .shop-all-btn {
+        margin-left: 260px;
+    }
+
+    /* Products */
+
+    #top-arrow {
+        margin-top: 15px;
+    }
+
+    /* Product details */
+
+    #quantity {
+        margin-left: 60px;
+    }
+
+    .form-row input {
+        max-width: 100%;
+    }
+
+    .add-to-basket {
+   
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    .browse-for-more-drink {
+        font-size: smaller;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Basket */
+
+    #table-price {
+        padding-left: 35px;
+    }
+
+    #table-qty {
+        padding-left: 65px;
+    }
+
+    .function-button-add {
+        margin-top: 15px;
+    } 
+
+    /* Edit product */
+    
+    .function-button-edit {
+        margin-top: 15px;
+    }
+
+    /* Footer */
+
+    .contact-detalis h4{
+        font-weight:bolder;
+        font-size: xx-large;
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+
+    .contact-details a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact-details h4{
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    .contact-details h6{
+        padding-bottom: 10px;
+        color:black
+    }
+    
+    .follow-us a{
+        padding-top: 15px;
+        color:black;
+    }
+
+    .follow-us i{
+        padding-right: 15px;
+        font-size: xx-large;
+    }
+
+    .copyright p{
+        padding-top: 15px;
+        font-weight: bold;
+
+    }
+
+    .social-back-colour{
+        background-color: floralwhite;
+    }
+}
+
+
+@media only screen and (min-width:992px){
+    /* Index */
+
+    .shop-all-btn{
+        margin-left:0;
+    }
+
+    /* Products */
+
+    #top-arrow{
+        margin-top: 0;
+    }
+
+    /* Product detalis */
+
+    .form-row input{
+        max-width: 30%;
+    }
+
+    #quantity{
+        margin-left:0;
+    }
+
+    .add-to-basket{
+   
+        padding-right: 25px;
+        font-weight:bold;
+    }
+
+    .browse-for-more-drink{
+        font-size: initial;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Basket */
+
+    #table-price{
+        padding-left:25px;
+    }
+
+    #table-qty{
+        padding-left:135px;
+    }
+
+    /* Footer */
+
+    .contact-detalis h4{
+        font-weight:bolder;
+        font-size: xx-large;
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+
+    .contact-details a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact-details h4{
+        color: black;
+    }
+
+    .contact-details h6{
+        color:black
+    }
+    
+    .follow-us a{
+        color:black;
+    }
+
+    .follow-us i{
+        padding-right: 15px;
+        font-size: xx-large;
+    }
+
+    .copyright p{
+        font-weight: bold;
+
+    }
+
+    .social-back-colour{
+        background-color:floralwhite
+    }
+
+
+
+}
+
+
+
 
 
