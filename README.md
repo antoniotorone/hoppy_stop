@@ -1,7 +1,5 @@
 # ANTONIO TORONE Milestone 4 - Full Stack Frameworks with Django
 
-[View here the live project]()
-
 
 ## HOPPY STOP
 
