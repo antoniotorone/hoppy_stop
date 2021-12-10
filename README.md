@@ -366,7 +366,7 @@ All devices wireframes PDF file [view] ()
 
 ### Known Bugs
 
-1. All the errors are mentioned inside the validation test folders [View here]()
+1. All the errors are mentioned inside the validation test folders [View here](https://github.com/antoniotorone/hoppy_stop/tree/main/Documentation/All-validation-test-PDF)
 
 ## Deployment
 
