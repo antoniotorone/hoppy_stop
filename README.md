@@ -1,11 +1,12 @@
 # ANTONIO TORONE Milestone 4 - Full Stack Frameworks with Django
 
+[View here the live project](https://hoppy-stop.herokuapp.com/)
 
 ## HOPPY STOP
 
 Hoppy Stop is an e-commerce site based on the trade-in canned beer with expansion to other beer related products. It is developed for business purposes. The site allows the owner to increase sales and expand their business through the internet. The e-commerce site these days is critically essential for any business also to keep up with the competition. The features included in this project are wholly related to online commerce being known as a shop and expanding their profit by becoming big. It is intuitive, responsive, friendly, and colourful
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="https://res.cloudinary.com/anto8913/image/upload/v1667332160/4th%20milestone/hoppy_stop_vjm353.jpg"></h2>
 
 
 ## User Experience (UX)
